@@ -1,0 +1,4 @@
+.circulo{
+    background-color: aqua;
+    clip-path: polygon(0 0, 0 100%, 50% 100%, 100% 0, 100% 0, 50% 0);
+}
