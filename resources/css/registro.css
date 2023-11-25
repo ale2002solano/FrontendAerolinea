@@ -11,7 +11,7 @@ body{
     /* border: 2px solid red; */
     width: 25%;
     height: 80%;
-    background: linear-gradient(to top ,#91d7f2 20%, #5196a6 50%, #295675 90%);
+    background: linear-gradient(to top ,#91d7f2 20%, #568dd4 50%, #295675 90%);
 
 }
 
@@ -31,6 +31,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    z-index: 1;
 }
 
 .inputRegistro{
@@ -41,6 +42,12 @@ body{
     border: 1.2px solid #295675;
     background-color: #f2f0eb;
 }
+
+.inputRegistro:focus{
+    outline: none;
+    border: 2px solid #295675;
+}
+
 
 ::placeholder{
     color:rgba(128, 128, 128, 0.589);
@@ -63,6 +70,12 @@ h2{
     margin-top: 7%;
 }
 
+#loginlink{
+    position: absolute;
+    top: 20%;
+    left: 83%;
+}
+
 #contenedor{
     /* border: 2px solid green; */
     height: 40%;
@@ -72,12 +85,27 @@ h2{
     object-fit: cover;
     width: 100%;
     mix-blend-mode: lighten;
+    pointer-events: none;
+}
+
+#texto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:#f2f0eb;
+    margin-left: 7%;
+    margin-top: 14%;
 }
 
 #nubes{
     position: absolute;
     bottom: 8%;
     width: 82%;
+    z-index: 0;
 }
 
 #trineo{
@@ -92,9 +120,9 @@ h2{
     from {
         top: -1000px;
         left: -1000px;
-      }
-      to {
+    }
+    to {
         top: 1000px;
         left: 1000px;
-      }
+    }
 }

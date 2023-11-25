@@ -11,8 +11,10 @@
     <div id="izquierda">
         <div id="contenedor">
             <img src="../img/ala-avion.jpg" alt="" id="imagen">
-
         </div>
+        <div id="texto">
+                <p>"El cielo no es el límite,<br>es solo el punto de partida."</p>
+            </div>    
 
     </div>
     <div id="derecha">
