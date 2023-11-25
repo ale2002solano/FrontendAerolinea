@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/login.css"
 </head>
 <body>
-    <div class="login">
-        <div class="circulo"></div>
+    <div class="principal">
+    <div class="contenedorfondo">
+        <div class="header">
+            <button class="btn">Login</button>
+            <button class="btn2">Sign up</button>
+        </div>
+        <div class="cotenido">
+        <h1>Welcome back</h1>
+        <label for="">User name</label>
+        <input type="text" name="username" id="username">
+        <label for="">Password</label>
+        <input type="text" name="password" id="password">
+        <button>Login</button>
+        </div>
+        
     </div>
+    <div class="shapedividers_com-1613"></div>
+    <div class="login"></div>
+    </div>
+    
 </body>
 </html>

@@ -1,4 +1,173 @@
-.circulo{
-    background-color: aqua;
-    clip-path: polygon(0 0, 0 100%, 50% 100%, 100% 0, 100% 0, 50% 0);
+html,body{
+margin: 0;
+border: none;
+}
+.login{
+    position: absolute;
+    background-image: url(../img/ala-avion.jpg);
+    background-size: cover;
+    z-index: index 1;
+    width: 100%;
+    height: 100%;
+}
+.contenedorfondo{
+    position: absolute;
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: #91D7F2;
+    z-index: 2;
+}
+.header{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: center;
+    margin-top: 5%;
+}
+.cotenido{
+    margin-top: 10%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.shapedividers_com-1613{
+overflow:hidden;
+position:fixed;
+width: 100%;
+height: 100%;
+left: 40%;
+z-index: 2;
+}
+.shapedividers_com-1613::before{
+content:'';
+font-family:'shape divider from ShapeDividers.com';
+position: absolute;
+bottom: -1px;
+left: -1px;
+right: -1px;
+top: -1px;
+z-index: 3;
+pointer-events: none;
+background-repeat: no-repeat; 
+background-size: 100% 90px;
+background-position: 50% 0%;    
+background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23fbd8c2"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23fbd8c2"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23fbd8c2"/></svg>'); 
+}
+
+@media (min-width:768px){
+.shapedividers_com-1613::before{
+background-size: 100% 90px;
+background-position: 50% 0%;   
+}  
+}
+ 
+@media (min-width:1025px){
+.shapedividers_com-1613::before{ 
+bottom: -0.1vw;
+left: -0.1vw;
+right: -0.1vw;
+top: -0.1vw; 
+background-size: 400px 132%;
+background-position: 0% 50%; 
+transform: rotateX(180deg); 
+background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.17 35.28" preserveAspectRatio="none"><path d="M.5 35.28C1.04 32.2.07 26 .5 19.13.9 12.26 1.06 5.4.38 0H0v35.28z" fill="%2391d7f2"/><path d="M1 35.28c.8-3.17-.38-7.3-.55-10.04-.17-2.76 1.47-9.25 1.3-12.68C1.58 9.14.91 7.92.88 5.52.86 3.12 1.76 0 1.76 0H0v35.28z" opacity=".5" fill="%2391d7f2"/><path d="M1.85 35.28c-.83-2.57-.3-7.68-.42-11.8-.12-4.1-.61-6.85-.28-9.57.33-2.73 1.17-5.61 1-8.61-.19-3-.82-4.73-.84-5.3H.1v35.28z" opacity=".5" fill="%2391d7f2"/></svg>'); 
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 500;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(90deg, #91d7f2 0%, #5196a6 100%);
+padding: 10px 29px;
+border: solid #48cae4 2px;
+box-shadow: rgb(0, 0, 0) 4px 9px 25px -10px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #91d7f2 0%, #5196a6 100%);
+color: #ffffff;
+border: solid 2px #0077b6;
+}
+
+.btn2{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(90deg, #91d7f2 0%, #5196a6 100%);
+    padding: 10px 29px;
+    border: solid #48cae4 2px;
+    box-shadow: rgb(0, 0, 0) 4px 9px 25px -10px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    }
+    
+    .btn2:hover{
+    
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #91d7f2 0%, #5196a6 100%);
+    color: #ffffff;
+    border: solid 2px #0077b6;
+    }
+ #username {
+     padding: 5px;
+     font-size: 16px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 14px;
+     box-shadow: -6px 0px 8px rgba(41,86,117,.75);
+     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+ #username:focus {
+     outline:none;
+}
+
+#password {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 14px;
+    box-shadow: -6px 0px 8px rgba(41,86,117,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+#password:focus {
+    outline:none;
 }
