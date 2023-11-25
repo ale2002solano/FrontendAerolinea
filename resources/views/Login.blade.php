@@ -15,11 +15,11 @@
             <button class="btn2">Sign up</button>
         </div>
         <div class="cotenido">
-        <h1>WELCOME BACK</h1>
-        <label for="">User name</label>
+        <h1 class="welcome">WELCOME BACK</h1>
+        <label for="" class="label-username">User name</label>
         <input type="text" name="username" id="username">
         <br>
-        <label for="">Password</label>
+        <label for="" class="label-password">Password</label>
         <input type="password" name="password" id="password">
         <br><br>
         <button class="login-btn">Login</button>

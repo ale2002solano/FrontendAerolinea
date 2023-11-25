@@ -203,3 +203,13 @@ background: linear-gradient(90deg, #a2f291 0%, #51a662 100%);
 color: #ffffff;
 border: solid 2px #00b52ac4;
 }
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+.label-password{
+    font-family: 'Lato', sans-serif;
+}
+.label-username{
+    font-family: 'Lato', sans-serif;
+}
+.welcome{
+        font-family: 'Lato', sans-serif;
+}
