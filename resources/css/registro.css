@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#izquierda{
+    /* border: 2px solid red; */
+    width: 25%;
+    height: 80%;
+    background: linear-gradient(to top ,#91d7f2 20%, #5196a6 50%, #295675 90%);
+
+}
+
+#derecha{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 7%;
+    background-color: #f2f0eb;
+
+}
+#formularioRegistro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.inputRegistro{
+    height: 34px;
+    width: 60%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1.2px solid #295675;
+    background-color: #f2f0eb;
+}
+
+::placeholder{
+    color:rgba(128, 128, 128, 0.589);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botonRegistro{
+    background-color:#295675;
+    color: #f2f0eb;
+    border: none;
+    border-radius: 20px;
+    width: 25%;
+    height: 15%;
+    
+}
+
+h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #295675;
+    margin-top: 7%;
+}
+
+#contenedor{
+    /* border: 2px solid green; */
+    height: 40%;
+}
+
+#imagen{
+    object-fit: cover;
+    width: 100%;
+    mix-blend-mode: lighten;
+}
+
+#nubes{
+    position: absolute;
+    bottom: 8%;
+    width: 82%;
+}
+
+#trineo{
+    position: absolute;
+    animation: trineoSanta 5s linear;
+    display: block;
+    top: -1000px;
+    left: -1000px;
+}
+
+@keyframes trineoSanta{
+    from {
+        top: -1000px;
+        left: -1000px;
+      }
+      to {
+        top: 1000px;
+        left: 1000px;
+      }
+}
