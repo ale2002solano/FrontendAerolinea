@@ -16,10 +16,10 @@
         </div>
         <div class="cotenido">
         <h1 class="welcome">WELCOME BACK</h1>
-        <label for="" class="label-username">User name</label>
+        <label for="" class="label-username"><b>Username</b></label>
         <input type="text" name="username" id="username">
         <br>
-        <label for="" class="label-password">Password</label>
+        <label for="" class="label-password"><b>Password</b></label>
         <input type="password" name="password" id="password">
         <br><br>
         <button class="login-btn">Login</button>
