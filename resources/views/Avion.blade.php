@@ -10,6 +10,7 @@
 <body>
     <div id="avion">
         <div id="premium">
+            <div class="asiento"><span class="material-symbols-outlined">event_seat</span></div>
             <span class="material-symbols-outlined">event_seat</span>
             <span class="material-symbols-outlined">event_seat</span>
             <span class="material-symbols-outlined"></span>
