@@ -206,10 +206,14 @@ border: solid 2px #00b52ac4;
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 .label-password{
     font-family: 'Lato', sans-serif;
+    color: #295675;
 }
 .label-username{
     font-family: 'Lato', sans-serif;
+    color: #295675;
 }
 .welcome{
-        font-family: 'Lato', sans-serif;
+    margin-top: 10%;
+    font-family: 'Lato', sans-serif;
+    color: #295675;
 }
