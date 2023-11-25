@@ -15,7 +15,7 @@
             <button class="btn2">Sign up</button>
         </div>
         <div class="cotenido">
-        <h1>Welcome back</h1>
+        <h1>WELCOME BACK</h1>
         <label for="">User name</label>
         <input type="text" name="username" id="username">
         <br>

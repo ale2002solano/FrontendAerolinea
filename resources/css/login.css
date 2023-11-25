@@ -151,6 +151,7 @@ border: solid 2px #0077b6;
      border-radius: 14px;
      box-shadow: -6px 0px 8px rgba(41,86,117,.75);
      text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     width: 40%;
 }
  #username:focus {
      outline:none;
@@ -167,6 +168,7 @@ border: solid 2px #0077b6;
     border-radius: 14px;
     box-shadow: -6px 0px 8px rgba(41,86,117,.75);
     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    width: 40%;
 }
 #password:focus {
     outline:none;
