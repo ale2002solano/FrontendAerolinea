@@ -22,4 +22,8 @@ Route::get('/registro', function () {
     return view('Registro');
 });
 
+Route::get('/avion', function () {
+    return view('Avion');
+});
+
 Route::get('/login', [LoginController::class,'index'])->name('usuario.login');

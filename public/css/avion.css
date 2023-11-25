@@ -73,6 +73,11 @@ body{
     border: 2px solid red; /* Establecer un borde de 2 píxeles de ancho y color rojo */
     font-size: 20px;
     color: #295675;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }  
 
 .material-symbols-outlined{
