@@ -10,101 +10,115 @@
 <body>
     <div id="avion">
         <div id="premium">
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-            <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined"></span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined"></span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined"></span>
+            <span class="material-symbols-outlined">event_seat</span>
+            <span class="material-symbols-outlined">event_seat</span>
 
         </div>
         <div id="ejecutiva">
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
         </div>
         <div id="pobres">
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px"></span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-        <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined"></span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
+        <span class="material-symbols-outlined">event_seat</span>
         </div>
     </div>
 
-<!-- <span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">event_seat</span>
-<span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">chair</span>
-<span class="material-symbols-outlined" style="font-weight: bold; color: #295675; font-size:35px">chair_alt</span> -->
+<!-- <span class="material-symbols-outlined">event_seat</span>
+<span class="material-symbols-outlined">chair</span>
+<span class="material-symbols-outlined">chair_alt</span> -->
 </body>
 </html>

@@ -31,9 +31,9 @@
 
     </div>
 
-    <img src="../img/nubes.png" alt="" id="nubes">
-    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply">
-    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply">
+    <img src="../img/nubes.png" alt="" id="nubes" style="width: 81.5%">
+    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply; width: 81.5%;">
+    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply; width: 81.5%;">
 
     <img src="../img/Trineo.webp" alt="" id="trineo">
 </body>
