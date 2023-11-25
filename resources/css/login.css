@@ -171,3 +171,33 @@ border: solid 2px #0077b6;
 #password:focus {
     outline:none;
 }
+
+.login-btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 500;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(90deg, #a2f291 0%, #51a662 100%);
+padding: 10px 29px;
+border: solid #81e349 2px;
+box-shadow: rgb(0, 0, 0) 4px 9px 25px -10px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.login-btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #a2f291 0%, #51a662 100%);
+color: #ffffff;
+border: solid 2px #00b52ac4;
+}

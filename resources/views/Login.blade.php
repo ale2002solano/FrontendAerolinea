@@ -18,9 +18,11 @@
         <h1>Welcome back</h1>
         <label for="">User name</label>
         <input type="text" name="username" id="username">
+        <br>
         <label for="">Password</label>
-        <input type="text" name="password" id="password">
-        <button>Login</button>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <button class="login-btn">Login</button>
         </div>
         
     </div>
