@@ -27,6 +27,7 @@
             <input class="inputRegistro" type="password" name="password" placeholder="Contraseña">
             <button type="submit" class="botonRegistro">Guardar</button>
         </form>
+        <img src="../img/logoregistro1.png" alt="" id="logo">
 
     </div>
 
