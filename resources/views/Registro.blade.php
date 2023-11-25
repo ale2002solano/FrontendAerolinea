@@ -28,12 +28,13 @@
             <input class="inputRegistro" type="password" name="password" placeholder="Contraseña">
             <button type="submit" class="botonRegistro">Guardar</button>
         </form>
+        <img src="../img/logoregistro1.png" alt="" id="logo">
 
     </div>
 
-    <img src="../img/nubes.png" alt="" id="nubes">
-    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply">
-    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply">
+    <img src="../img/nubes.png" alt="" id="nubes" style="width: 81.5%">
+    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply; width: 81.5%;">
+    <img src="../img/nubes.png" alt="" id="nubes" style="mix-blend-mode:multiply; width: 81.5%;">
 
     <img src="../img/Trineo.webp" alt="" id="trineo">
 </body>

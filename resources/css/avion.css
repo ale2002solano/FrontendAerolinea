@@ -1,0 +1,113 @@
+body{
+    border: 2px solid blue;
+    display: flex;
+    height: 100vh;
+}
+#avion{
+    border: 2px solid red;
+    height: 80%;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#premium{
+    /* border: 2px solid green; */
+    height: 280px;
+    width: 100%;
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px 12px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . .";
+    align-items: center;
+    justify-items: center;
+}
+#ejecutiva{
+    /* border: 2px solid blue; */
+    height: 340px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 4px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . .";
+    align-items: center;
+    justify-items: center;
+}
+
+#pobres{
+    /* border: 2px solid yellow; */
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 2px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . ."
+        ". . . . . . .";
+    align-items: center;
+    justify-items: center;
+}
+
+.asiento {
+    border: 2px solid red; /* Establecer un borde de 2 píxeles de ancho y color rojo */
+    font-size: 20px;
+    color: #295675;
+}  
+
+.material-symbols-outlined{
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    color: #295675;
+    font-weight: bold;
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 13px; /* Ancho de la barra de desplazamiento */
+}
+/* Estilo para el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #5196a6; /* Color del pulgar */
+    border-radius: 6px; /* Borde redondeado del pulgar */
+    border: 3px solid #ffffff; /* Borde blanco alrededor del pulgar */
+}
+/* Estilo para el fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+    border-radius: 10px; /* Borde redondeado del fondo */
+} 
+/* Cambiar el color del pulgar cuando está en hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2c3e50; /* Color del pulgar al pasar el ratón sobre él */
+}
