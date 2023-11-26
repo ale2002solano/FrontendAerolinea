@@ -16,9 +16,9 @@
     <div id="avionDiseño">
         <div id="diseñoIzquierda">
             <div class="lateral"></div>
-            <div class="lateral"  id="aleta1"></div>
+            <div class="lateral"  id="aleta1"><div id="sombra1"></div></div>
             <div class="lateral"></div>
-            <div id="colaLateral"></div>
+            <div id="colaLateral"><div id="sombra2"></div></div>
         </div>
         <div id="diseñoCentro">
             <div id="centroCabeza">
