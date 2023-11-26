@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +21,10 @@ Route::get('/registro', function () {
     return view('Registro');
 });
 
-Route::get('/login', [LoginController::class,'index'])->name('usuario.login');
+Route::get('/login', function () {
+    return view('Login');
+});
+
+Route::get('/home', function () {
+    return view('Home');
+});
