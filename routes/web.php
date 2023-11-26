@@ -21,16 +21,11 @@ Route::get('/registro', function () {
     return view('Registro');
 });
 
-<<<<<<< HEAD
-Route::get('/login', function () {
-    return view('Login');
-});
-
 Route::get('/home', function () {
     return view('Home');
 });
-=======
+
 Route::get('/avion', function () {
     return view('Avion');
 });
->>>>>>> 546678025bd6ac8bfbe593c0b3533d21f8f99762
+
