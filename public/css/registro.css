@@ -3,22 +3,21 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin: 0;
 }
 
 #izquierda{
     /* border: 2px solid red; */
-    width: 25%;
-    height: 80%;
+    width: 35%;
+    height: 100%;
     background: linear-gradient(to top ,#91d7f2 20%, #568dd4 50%, #295675 90%);
 
 }
 
 #derecha{
     /* border: 2px solid blue; */
-    width: 50%;
-    height: 80%;
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -28,10 +27,10 @@ body{
 }
 
 #logo{
-    width: 150px;
+    width: 160px;
     position: fixed;
-    right: 10%;
-    top: 14%;
+    right: 3%;
+    top: 2%;
     opacity: 0.8;
 }
 #formularioRegistro{
@@ -111,8 +110,8 @@ p{
 
 #nubes{
     position: absolute;
-    bottom: 8%;
-    width: 81.5%;
+    bottom: 0;
+    width: 100%;
     z-index: 0;
 }
 

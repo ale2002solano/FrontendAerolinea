@@ -70,7 +70,7 @@ body{
 }
 
 .asiento {
-    border: 2px solid red; /* Establecer un borde de 2 píxeles de ancho y color rojo */
+    /* border: 2px solid red; */
     font-size: 20px;
     color: #295675;
     width: 100%;

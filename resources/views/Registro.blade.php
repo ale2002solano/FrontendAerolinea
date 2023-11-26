@@ -32,9 +32,9 @@
 
     </div>
 
-    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 81.5%">
-    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 81.5%;">
-    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 81.5%;">
+    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 100%">
+    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
+    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
 
     <img src="{{ asset('img/Trineo.webp') }}" alt="" id="trineo">
 </body>

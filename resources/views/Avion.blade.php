@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="{{ asset('css/avion.css') }}">
 </head>
@@ -71,51 +73,9 @@
         <div id="F10" class="asiento"><span class="material-symbols-outlined">event_seat</span></div>
         </div>
         <div id="pobres">
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined"></span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined"></span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined"></span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined"></span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined"></span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined"></span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
-        <span class="material-symbols-outlined">event_seat</span>
         </div>
     </div>
-    <button onclick="generar asientos(54)"></button>
+    <button onclick="generarAsientos(120)">Generar</button>
 
 <!-- <span class="material-symbols-outlined">event_seat</span>
 <span class="material-symbols-outlined">chair</span>
