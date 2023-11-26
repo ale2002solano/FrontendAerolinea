@@ -33,6 +33,4 @@ Route::get('/home', function () {
 Route::get('/avion', function () {
     return view('Avion');
 });
-
-Route::get('/login', [LoginController::class,'index'])->name('usuario.login');
 >>>>>>> 546678025bd6ac8bfbe593c0b3533d21f8f99762
