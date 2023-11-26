@@ -8,11 +8,11 @@ function generarAsientos(cantidadAsientos) {
     for (let p = 0; p < 3; p++) {
         num = p+1;
         document.getElementById('premium').innerHTML+=`
-        <div id="${"A"+num}" class="asiento"><span class="material-symbols-outlined">event_seat</span></div>
-        <div id="${"B"+num}" class="asiento"><span class="material-symbols-outlined">event_seat</span></div>
+        <div id="${"A"+num}" class="asiento"><span style="font-size: 1.6em"class="material-symbols-outlined">event_seat</span></div>
+        <div id="${"B"+num}" class="asiento"><span style="font-size: 1.6em"class="material-symbols-outlined">event_seat</span></div>
         <span class="material-symbols-outlined"></span>
-        <div id="${"E"+num}" class="asiento"><span class="material-symbols-outlined">event_seat</span></div>
-        <div id="${"F"+num}" class="asiento"><span class="material-symbols-outlined">event_seat</span></div>
+        <div id="${"E"+num}" class="asiento"><span style="font-size: 1.6em"class="material-symbols-outlined">event_seat</span></div>
+        <div id="${"F"+num}" class="asiento"><span style="font-size: 1.6em"class="material-symbols-outlined">event_seat</span></div>
         `   
     }
 
