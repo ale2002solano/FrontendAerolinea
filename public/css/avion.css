@@ -1,5 +1,5 @@
 body{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     height: 100vh;
     margin: 0;
@@ -98,6 +98,7 @@ h2{
 }
 #premium{
     /* border: 2px solid green; */
+    background-color: #ffc44652;
     height: 13%;
     width: 100%;
     display: grid;
@@ -117,6 +118,7 @@ h2{
 }
 #ejecutiva{
     /* border: 2px solid blue; */
+    background-color: #5f9dc74d;
     height: 30%;
     width: 100%;
     display: grid;
@@ -148,7 +150,7 @@ h2{
 } */
 #pobres{
     /* border: 2px solid yellow; */
-    height: 40%;
+    height: 57%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -164,9 +166,10 @@ h2{
         ". . . . . . .";
     align-items: center;
     justify-items: center;
+    background-color: #51d76073;
 }
 
-.asiento {
+.asientoPeque {
     /* border: 2px solid red; */
     font-size: 0.6em; /* cambiar a 2em */
     color: #295675;
@@ -175,15 +178,35 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: asientosCrecer 3s linear;
+    animation: asientosDisminuir 2.5s cubic-bezier(0.3, 0, 0.7, 1);
 }  
 
-@keyframes asientosCrecer {
+.asientoJumbo {
+    /* border: 2px solid red; */
+    font-size: 2em; /* cambiar a 2em */
+    color: #295675;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: asientosCrecer 2.5s cubic-bezier(0.3, 0, 0.7, 1);
+}  
+@keyframes asientosDisminuir {
     from {
         font-size: 2em;
     }
     to {
-        font-size: 0.1em;
+        font-size: 0.6em;
+    }
+}
+
+@keyframes asientosCrecer {
+    from {
+        font-size: 0.6em;
+    }
+    to {
+        font-size: 2em;
     }
 }
 
@@ -225,10 +248,10 @@ h2{
 }
 
 
-#avionDiseño{
+.avionNormal{
     /* border: 2px solid pink; */
     display: flex;
-    animation: avionLlegando 4s cubic-bezier(0.3, 0, 0.7, 1);
+    animation: avionLlegando 2.5s cubic-bezier(0.3, 0, 0.7, 1);
     position: absolute;
     height: 103%;
     width: 58%;
@@ -259,6 +282,71 @@ h2{
         bottom: 0%;
         left: 30%;
     }
+}
+
+.avionCreciendo{
+        /* border: 2px solid pink; */
+        display: flex;
+        animation: avionAumento 2.5s cubic-bezier(0.3, 0, 0.7, 1);
+        position: absolute;
+        height: 450%;
+        bottom: -305%;
+        width: 200%;
+        left: -40%;
+        z-index: 5;
+}
+
+@keyframes avionAumento{
+    from {
+        height: 103%;
+        width: 58%;
+        bottom: 0%;
+        left: 30%;
+
+    }
+    to {
+        height: 450%;
+        bottom: -305%;
+        width: 200%;
+        left: -40%;
+    }
+}
+
+@keyframes mostrandoClaseAB {
+    from {bottom: -305%;}
+    to {bottom: -256%;}    
+}
+@keyframes mostrandoClaseAC {
+    from {bottom:-305% ;}
+    to {bottom: -155%;}    
+}
+@keyframes mostrandoClaseBA {
+    from {bottom: -256%;}
+    to {bottom: -305%;}    
+}
+@keyframes mostrandoClaseBC {
+    from {bottom: -256%;}
+    to {bottom: -155%;}    
+}
+@keyframes mostrandoClaseCA {
+    from {bottom: -155%;}
+    to {bottom: -305%;}    
+}
+@keyframes mostrandoClaseCB {
+    from {bottom: -155%;}
+    to {bottom: -256%;}    
+}
+
+.avionPorClases{
+    /* border: 2px solid pink; */
+    display: flex;
+    /* animation: avionAumento 4s cubic-bezier(0.3, 0, 0.7, 1); */
+    position: absolute;
+    height: 450%;
+    bottom: -305%;
+    width: 200%;
+    left: -40%;
+    z-index: 5;
 }
 
 #diseñoIzquierda{
@@ -343,6 +431,7 @@ h2{
     height: 100%;
     clip-path: polygon(98% -9%, 163% 63%, 88% 121%);
     background-color: #295675;
+    position: relative;
 }
 
 #sombra2{
@@ -351,6 +440,24 @@ h2{
     clip-path: polygon(100% -100%, 157% 63%, 93% 121%);
     background-color: #295675;
 }
+
+/* #estampado{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(-19% 0%, 218% 14%, 131% 114%);
+    background-color: #d10816
+}
+#estampado2{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(145% -18%, -132% -4%, -32% 115%);
+    background-color: #d10816;
+    position: relative;
+    top: -100%;
+} */
+
+
+
 #aleta2{
     width: 100%;
     clip-path: polygon(0% 0%, 0% 60%, 120% 100%);
@@ -402,12 +509,10 @@ h2{
     right: 30%;
     top: -40%;
     animation: nubes 4s ease-in infinite;
-    animation-delay: 4s;
+    animation-delay: 3s;
     z-index: 1;
 }
-#nubes0{
 
-}
 
 #nubes2{
     width: 15%;
@@ -491,4 +596,19 @@ h2{
 
 .clasismo{
     width: 80%;
+}
+
+#acercar{
+    position: absolute;
+    width: 17%;
+    height: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    bottom: 70%;
+    right: 6%;
+    /* border: 2px solid red; */
+    background-color: #f2f0eb;
+    z-index: 10;
 }

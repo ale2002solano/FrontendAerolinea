@@ -16,7 +16,7 @@
             <button class="btn2">Sign up</button>
         </div>
         <div class="cotenido">
-        <img src="../img/logo.png" id="logo">
+        <img src="{{asset('img/logo.ico')}}" id="logo">
         <label for="" class="label-username"><b>Username</b></label>
         <input type="text" name="username" id="username">
         <br>
