@@ -17,7 +17,10 @@
 	color:white;
 }
 #navbar{
-	background-color: #91d7f2;
+	background-color: #91d7f2af;
+	position: fixed; /* Fija la barra de navegación en la parte superior */
+  width: 100%; /* O el ancho deseado */
+  z-index: 1000;
 }
 .relleno
 	{
@@ -46,7 +49,22 @@ h1{
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 #nombreAir{
-	color: #295675;
+	color: #254e69;
 	font-family: 'Lato', sans-serif;
 	font-size:x-large;
+	font-weight: bolder;
+}
+
+#opciones{
+	background-color: #91d7f200;
+	border: none;
+	color: #254e69;
+	font-family: 'Lato', sans-serif;
+	font-weight:bolder;
+}
+
+/* CAROUSEL */
+#carouselExample{
+	position: relative;
+  z-index: 1;
 }

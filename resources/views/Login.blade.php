@@ -27,7 +27,6 @@
         </div>
         
     </div>
-    <div class="shapedividers_com-1613"></div>
     <div class="login"></div>
     </div>
     
