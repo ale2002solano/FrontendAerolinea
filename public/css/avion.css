@@ -3,7 +3,7 @@ body{
     display: flex;
     height: 100vh;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     /* background-image: url('../img/oceano2.jpg');
     background-size: cover;
@@ -11,14 +11,90 @@ body{
     background-repeat: no-repeat; */
 }
 #boleto{
-    border: 2px solid red;
-    height: 80%;
-    width: 26%;
+    border: 2px solid #295675;
+    border-radius: 10%;
+    height: 85%;
+    width: 35%;
+    left: 4%;
+    top: 4%;
     display: flex;
     flex-direction: column;
-    background-color:#f2f0eb;
+    background-color: #f2f0eb;
     position: absolute;
-    z-index: 2;
+    box-shadow: 1px 5px 32px rgba(0, 0, 100, 0.3);
+    z-index: 10;
+    overflow: hidden;
+}
+
+#boletoTitulo{
+    width: 100%;
+    height: 17%;
+    border-bottom: 2px solid #295675;
+}
+
+#boletoRuta{
+    width: 100%;
+    height: 28%;
+    
+}
+
+#boletoInfo{
+    width: 100%;
+    height: 25%;
+    border: 2px solid #295675;
+    border-left: none;
+    border-right: none;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #295675;
+}
+
+#boletoBoton{
+    width: 100%;
+    height: 10%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonCompra{
+    width: 50%;
+    height: 90%;
+    background-color: #2c9acb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f2f0eb;
+    border-radius: 10px;
+    border: none;
+    z-index: 11;
+    margin-top: 16%;
+}
+
+#boletoDecoracion{
+    width: 100%;
+    height: 20%;
+}
+
+.nubesDecoracion{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    filter: hue-rotate(355deg);
+}
+
+#logo{
+    width: 25%;
+    position: absolute;
+    right: -1%;
+    top: -2%;
+    opacity: 0.5;
 }
 #premium{
     /* border: 2px solid green; */
@@ -92,7 +168,7 @@ body{
 
 .asiento {
     /* border: 2px solid red; */
-    font-size: 2em;
+    font-size: 0.6em; /* cambiar a 2em */
     color: #295675;
     width: 100%;
     height: 100%;
@@ -104,10 +180,10 @@ body{
 
 @keyframes asientosCrecer {
     from {
-        font-size: 0.1em;
+        font-size: 2em;
     }
     to {
-        font-size: 2em;
+        font-size: 0.1em;
     }
 }
 
@@ -154,26 +230,34 @@ body{
     display: flex;
     animation: avionLlegando 4s cubic-bezier(0.3, 0, 0.7, 1);
     position: absolute;
-    height: 100%;
-    width: 60%;
+    height: 103%;
+    width: 58%;
     bottom: 0%;
-    left: 10%;
-    z-index: 1;
+    left: 30%;
+    z-index: 5;
 }
 
 @keyframes avionLlegando{
     from {
-        height: 100%;
-        width: 60%;
+        /* height: 103%;
+        width: 58%;
         bottom: 0%;
-        left: 10%;
-
-    }
-    to {
+        left: 30%; */
         height: 450%;
         bottom: -305%;
         width: 200%;
-        left: -50%;
+        left: -40%;
+
+    }
+    to {
+        /* height: 450%;
+        bottom: -305%;
+        width: 200%;
+        left: -40%; */
+        height: 103%;
+        width: 58%;
+        bottom: 0%;
+        left: 30%;
     }
 }
 
@@ -198,8 +282,8 @@ body{
     /* border: 2px solid green; */
     width: 101%;
     height: 10%;
-    clip-path: ellipse(65% 285% at 50% 283%);
-    background-color: #295675;
+    clip-path: ellipse(72% 289% at 50% 289%);
+    background-color: #2c9acb;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -209,7 +293,8 @@ body{
     background-color: #f2f0eb;
     height: 40%;
     width: 100%;
-    clip-path: ellipse(60% 224% at 50% 229%);
+    clip-path: ellipse(61% 224% at 50% 229%);
+    margin-bottom: -1px;
 }
 
 #centroCuerpo{
@@ -221,6 +306,7 @@ body{
     background-color: #f2f0eb;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
 }
 
@@ -229,7 +315,7 @@ body{
     width: 100%;
     height: 13%;
     clip-path: ellipse(85% 100% at 50% 0%);
-    background-color: #295675;
+    background-color: #2c9acb;
 }
 
 #diseñoDerecha{
@@ -249,26 +335,26 @@ body{
 #aleta1 {
     width: 100%;
     clip-path: polygon(100% 0%, 100% 60%, -20% 100%);
-    background-color: #295675;
+    background-color: #2c9acb;
 }
 
 #sombra1{
     width: 100%;
     height: 100%;
     clip-path: polygon(98% -9%, 163% 63%, 88% 121%);
-    background-color: #082d46;
+    background-color: #295675;
 }
 
 #sombra2{
     width: 100%;
     height: 100%;
-    clip-path: polygon(100% -9%, 157% 63%, 93% 121%);
-    background-color: #082d46;
+    clip-path: polygon(100% -100%, 157% 63%, 93% 121%);
+    background-color: #295675;
 }
 #aleta2{
     width: 100%;
     clip-path: polygon(0% 0%, 0% 60%, 120% 100%);
-    background-color: #295675;
+    background-color: #2c9acb;
 
 }
 #colaLateral,#colaLateral2{
@@ -281,13 +367,13 @@ body{
 #colaLateral{
     width: 100%;
     clip-path: polygon(100% 0%, 100% 65%, 40% 130%);
-    background-color: #295675;
+    background-color: #2c9acb;
 }
 
 #colaLateral2{
     width: 100%;
     clip-path: polygon(0% 0%, 0% 65%, 60% 130%);
-    background-color: #295675;
+    background-color: #2c9acb;
 }
 
 #navidad{
@@ -295,17 +381,114 @@ body{
     right: 20%;
     width: 100px;
     bottom: 100%;
-    animation: santa 13s infinite;
+    animation: santa 15s;
+    animation-delay: 10s;
     z-index: 0;
 }
 
 @keyframes santa{
     from {
-        bottom: 200%;
+        bottom: 100%;
     }
     to {
-        bottom: -200%;
+        bottom: -100%;
     }
 }
 
+.nubes{
+    position: absolute;
+    width: 11%;
+    height: 20%;
+    right: 30%;
+    top: -40%;
+    animation: nubes 4s ease-in infinite;
+    animation-delay: 4s;
+    z-index: 1;
+}
+#nubes0{
 
+}
+
+#nubes2{
+    width: 15%;
+    height: 30%;
+    right: 60%;
+    animation-delay: 6s;
+}
+
+#nubes3{
+    width: 11%;
+    height: 20%;
+    right: 80%;
+    animation-delay: 4.5s;
+} 
+
+#nubes4{
+    width: 11%;
+    height: 20%;
+    right: 10%;
+    animation-delay: 4.6s;
+} 
+
+.nubeMain{
+    position: absolute;
+    width: 90%;
+    height: 87%;
+    background-color: #cedfef96;
+    display: flex;
+    border-radius: 30% 28% 27% 21%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+@keyframes nubes{
+    from {
+        top: -40%;
+    }
+    to {
+
+        top: 100%;
+    }
+}
+
+#nubeMini{
+    position: absolute;
+    width: 12%;
+    height: 25%;
+    border-radius: 30% 28% 27% 21%;
+}
+
+#avionNav{
+    position: absolute;
+    width: 17%;
+    height: 25%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    bottom: 11%;
+    right: 6%;
+}
+
+.claseNav{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    background-color: #f2f0eb;
+    border-radius: 6px;
+
+}
+
+.colorcito{
+    width: 9%;
+    height: 30%;
+}
+
+.clasismo{
+    width: 80%;
+}

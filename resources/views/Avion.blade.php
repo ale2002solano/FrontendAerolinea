@@ -8,11 +8,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="{{ asset('css/avion.css') }}">
+    
 </head>
 <body>
     <div id="boleto">
-    <button onclick="generarAsientos(120)">Generar</button>
-    </div>   
+        <div id="boletoTitulo">
+            <h2 style="font-size:40px; margin: 0 30px; font-weight=bolder" >Boleto</h2>
+        </div>
+        <div id="boletoRuta"><h2>Ruta:</h2></div>
+        <div id="boletoInfo">
+            <h2 id="CompradorInfo" style="margin:5px 0 0 0">Comprador:</h2>
+            <br>
+            <h2 id="CompradorAsiento" style="margin: 5px 0 0 5px">Asiento:</h2></div>
+        <div id="boletoBoton"><button id="botonCompra" onclick="generarAsientos(150)">Generar</button></div>
+        <div id="boletoDecoracion">
+            <!-- <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="width: 100%">
+            <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="mix-blend-mode:multiply; width: 100%;">
+            <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="mix-blend-mode:multiply; width: 100%;"> -->
+        </div>
+
+        <img src="{{ asset('img/logoregistro1.png') }}" alt="" id="logo">        
+    </div>  
+
     <div id="avionDiseño">
         <div id="diseñoIzquierda">
             <div class="lateral"></div>
@@ -45,6 +62,35 @@
 
     <img id="navidad" src="{{ asset('img/trineoSanta.webp') }}" alt="">
 
+    <div id="nubes0" class="nubes">
+        <div class="nubeMain" style="right: 22%;top: 43%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color;"></div>
+        <div class="nubeMain"></div>
+        <div class="nubeMain" style="right: -37%;top: 25%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color; "></div>
+    </div>
+
+    <div id="nubes2" class="nubes">
+        <div class="nubeMain" style="right: 22%;top: 43%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color;"></div>
+        <div class="nubeMain"></div>
+        <div class="nubeMain" style="right: -37%;top: 25%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color; "></div>
+    </div>
+
+    <div id="nubes3" class="nubes">
+        <div class="nubeMain" style="right: 22%;top: 43%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color;"></div>
+        <div class="nubeMain"></div>
+        <div class="nubeMain" style="right: -37%;top: 25%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color; "></div>
+    </div>
+
+    <div id="nubes4" class="nubes">
+        <div class="nubeMain" style="right: 22%;top: 43%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color;"></div>
+        <div class="nubeMain"></div>
+        <div class="nubeMain" style="right: -37%;top: 25%;background-color: #cedfef96;z-index: 1;mix-blend-mode: color; "></div>
+    </div>
+
+    <div id="avionNav">
+        <div class="claseNav"><div class="colorcito" style="background-color:#ffc446bd"></div><h2 class="clasismo">Primera Clase</h2></div>
+        <div class="claseNav"> <div class="colorcito" style="background-color:#5f9dc7b3"></div><h2 class="clasismo">Clase Ejecutiva</h2></div>
+        <div class="claseNav"><div class="colorcito" style="background-color:#51d760c4"></div><h2 class="clasismo">Clase Economica</h2></div>
+    </div>
 <!-- <span class="material-symbols-outlined">event_seat</span>
 <span class="material-symbols-outlined">chair</span>
 <span class="material-symbols-outlined">chair_alt</span> -->
