@@ -29,3 +29,6 @@ Route::get('/avion', function () {
     return view('Avion');
 });
 
+Route::get('/login', function () {
+    return view('Login');
+});
