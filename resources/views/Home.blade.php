@@ -42,15 +42,43 @@
       </ul>
       <form class="d-flex" role="search">
         <button type="button" class="btn btn-primary"><i id="user" class="fa-solid fa-circle-user fa-xl"></i>Login/Sign Up</button>
+        <select name="opciones" id="opciones">
+        <option value="opcion1">Honduras</option>
+        <option value="opcion2">Guatemala</option>
+        <option value="opcion3">Panama</option>
+        <!-- Puedes agregar más opciones si lo deseas -->
+    </select>
       </form>
     </div>
   </div>
 </nav>
 
 
+<!-- INICIO CAROUSEL -->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{asset('img/car1.jpeg')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{asset('img/car2.jpeg')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{asset('img/car3.jpeg')}}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- FINAL CAROUSEL -->
 <br><br>
 <h1>Vuela más,paga menos: Vuelos baratos en SkyVibe Airline</h1>
-
 <div class="relleno">
 <div class="card" style="width: 18rem;">
 <i class="fa-solid fa-coins fa-2xl" style="color: #295675;"></i>
@@ -84,12 +112,12 @@
 </div>
 </div>
 
-
     
 
 
 
 
+<script src="{{ asset('js/home.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
