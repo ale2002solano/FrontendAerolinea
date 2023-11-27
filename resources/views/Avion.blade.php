@@ -20,7 +20,7 @@
             <h2 id="CompradorInfo" style="margin:5px 0 0 0">Comprador:</h2>
             <br>
             <h2 id="CompradorAsiento" style="margin: 5px 0 0 5px">Asiento:</h2></div>
-        <div id="boletoBoton"><button id="botonCompra" onclick="generarAsientos(150)">Generar</button></div>
+        <div id="boletoBoton"><button id="botonCompra" onclick="generarAsientos(120)">Generar</button></div>
         <div id="boletoDecoracion">
             <!-- <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="width: 100%">
             <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="mix-blend-mode:multiply; width: 100%;">

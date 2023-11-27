@@ -30,8 +30,10 @@ function generarAsientos(cantidadAsientos) {
         
         
     }
-
+    let filas =""
     for (let i = 0; i <filasEconomicas; i++) {
+        filas += '1fr '
+
         num = i+18;
         document.getElementById('pobres').innerHTML+=`
         <div id="${"A"+num}" onclick="reservarAsiento('${"A"+num}')" class="asientoPeque"><span class="material-symbols-outlined">event_seat</span></div>
@@ -42,7 +44,7 @@ function generarAsientos(cantidadAsientos) {
         <div id="${"E"+num}" onclick="reservarAsiento('${"E"+num}')" class="asientoPeque"><span class="material-symbols-outlined">event_seat</span></div>
         <div id="${"F"+num}" onclick="reservarAsiento('${"F"+num}')" class="asientoPeque"><span class="material-symbols-outlined">event_seat</span></div>
         `
-        
+        document.getElementById('pobres').style.gridTemplateRows = filas;
     }
 }
 
