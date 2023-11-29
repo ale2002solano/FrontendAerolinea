@@ -20,7 +20,7 @@
             <h2 id="CompradorInfo" style="margin:5px 0 0 0">Comprador:</h2>
             <br>
             <h2 id="CompradorAsiento" style="margin: 5px 0 0 5px">Asiento:</h2></div>
-        <div id="boletoBoton"><button id="botonCompra" onclick="generarAsientos(150)">Generar</button></div>
+        <div id="boletoBoton"><button id="botonCompra" onclick="generarAsientos(120)">Generar</button></div>
         <div id="boletoDecoracion">
             <!-- <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="width: 100%">
             <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="mix-blend-mode:multiply; width: 100%;">
@@ -30,10 +30,10 @@
         <img src="{{ asset('img/logoregistro1.png') }}" alt="" id="logo">        
     </div>  
 
-    <div id="avionDiseño">
+    <div id="avionDiseño" class="avionNormal">
         <div id="diseñoIzquierda">
             <div class="lateral"></div>
-            <div class="lateral"  id="aleta1"><div id="sombra1"></div></div>
+            <div class="lateral"  id="aleta1"><div id="sombra1"></div><div id="estampado2"></div></div>
             <div class="lateral"></div>
             <div id="colaLateral"><div id="sombra2"></div></div>
         </div>
@@ -54,7 +54,7 @@
         </div>
         <div id="diseñoDerecha">
             <div class="lateral"></div> 
-            <div class="lateral" id="aleta2"></div> 
+            <div class="lateral" id="aleta2"><div id="estampado"></div></div> 
             <div class="lateral"></div> 
             <div id="colaLateral2"></div>
         </div>
@@ -87,9 +87,13 @@
     </div>
 
     <div id="avionNav">
-        <div class="claseNav"><div class="colorcito" style="background-color:#ffc446bd"></div><h2 class="clasismo">Primera Clase</h2></div>
-        <div class="claseNav"> <div class="colorcito" style="background-color:#5f9dc7b3"></div><h2 class="clasismo">Clase Ejecutiva</h2></div>
-        <div class="claseNav"><div class="colorcito" style="background-color:#51d760c4"></div><h2 class="clasismo">Clase Economica</h2></div>
+        <div class="claseNav" id="clasePrimera"><div class="colorcito" style="background-color:#ffc446bd"></div><h2 class="clasismo">Primera Clase</h2></div>
+        <div class="claseNav"id="claseEjecutiva"> <div class="colorcito" style="background-color:#5f9dc7b3"></div><h2 class="clasismo">Clase Ejecutiva</h2></div>
+        <div class="claseNav" id="claseEconomica"><div class="colorcito" style="background-color:#51d760c4"></div><h2 class="clasismo">Clase Economica</h2></div>
+    </div>
+
+    <div id="acercar" onclick="aumentarAvion()">
+        <h2>Acercar</h2>
     </div>
 <!-- <span class="material-symbols-outlined">event_seat</span>
 <span class="material-symbols-outlined">chair</span>
