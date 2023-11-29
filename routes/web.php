@@ -24,7 +24,7 @@ Route::get('/registro', function () {
 
 Route::get('/home', function () {
     return view('Home');
-});
+})->name('home');
 
 Route::get('/avion', function () {
     return view('Avion');
@@ -35,7 +35,7 @@ Route::get('/login', function () {
 });
 
 //BOTONES DEL LOGIN
-Route::get('/login/registrarse',[LoginController::class, 'registrarse'])->name('registrarse');
+Route::get('/home/login/registrarse',[LoginController::class, 'registrarse'])->name('registrarse');
 //FIN BOTONES DEL LOGIN
 
 //BOTONES DEL HOME

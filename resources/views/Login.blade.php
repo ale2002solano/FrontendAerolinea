@@ -16,24 +16,16 @@
         <a href="{{URL::previous()}}" id="back"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i> Regresar</a>
             <img src="../img/logo.png" id="logo">
         </div>
-<<<<<<< HEAD
     </div>
     <div class="cotenido">
         <input type="text" name="username" id="username" placeholder="username">
         <br>
         <input type="password" name="password" id="password" placeholder="password">
-=======
-        <div class="cotenido">
-        <img src="{{asset('img/logo.ico')}}" id="logo">
-        <label for="" class="label-username"><b>Username</b></label>
-        <input type="text" name="username" id="username">
->>>>>>> 08341ce4fd5cb2fd05f62529a5521de4080d8ccb
         <br>
         <button class="login-btn">Login</button>
         <br>
         <a href="{{route('registrarse')}}">¿Aún no tienes una cuenta?</a>
-        </div>
-    </div><br><br><br>
+        </div><br><br><br>
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 100%">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">

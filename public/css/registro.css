@@ -62,13 +62,33 @@ body{
 }
 
 .botonRegistro{
-    background-color:#295675;
-    color: #f2f0eb;
-    border: none;
-    border-radius: 20px;
-    width: 25%;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(90deg, #91d7f2 0%, #295675 100%);
+    padding: 10px 29px;
+    border: solid #38b2ca 2px;
+    box-shadow: rgb(0, 0, 0) 4px 9px 25px -10px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index: 10;
+    width: 16%;
     height: 15%;
     
+}.botonRegistro:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #91d7f2 0%, #5196a6 100%);
+    color: #ffffff;
+    border: solid 2px #0168a0;
 }
 
 h2{
@@ -133,3 +153,13 @@ p{
         left: 1000px;
     }
 }
+
+#back{
+    z-index:10;
+    color: #295675;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    margin-left: 2%;
+    margin-top: 5%
+}
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');

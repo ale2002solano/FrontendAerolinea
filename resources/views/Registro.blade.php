@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up SkyVibes Airline</title>
     <link rel="stylesheet" href="{{ asset('css/registro.css') }}">
-    <link rel="icon" href="../img/logo.ico">
-
+    <link rel="icon" href="{{asset('img/logo.ico')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
 </head>
 <body>
     <div id="izquierda">
@@ -19,6 +19,7 @@
 
     </div>
     <div id="derecha">
+    <a href="{{route('home')}}" id="back"><i class="fa-solid fa-arrow-left" style="color: #295675;"></i> Regresar</a>
         <h2 >Registro</h2>
         <form action="" id="formularioRegistro">
             <input class="inputRegistro" type="text" name="nombre" placeholder="Nombre">
@@ -26,7 +27,7 @@
             <input class="inputRegistro" type="text" name="correo" placeholder="Correo electronico">
             <input class="inputRegistro" type="text" name="telefono" placeholder="Telefono">
             <input class="inputRegistro" type="password" name="password" placeholder="Contraseña">
-            <button type="submit" class="botonRegistro">Guardar</button>
+            <button class="botonRegistro">Guardar</button>
         </form>
         <img src="{{ asset('img/logoregistro1.png') }}" alt="" id="logo">
 
