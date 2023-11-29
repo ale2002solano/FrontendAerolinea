@@ -13,35 +13,15 @@
     
 <nav class="navbar navbar-expand-lg" id="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" id="nombreAir"><img src="{{asset('img/logo.png')}}" id="home">SkyVibe Airline</a>
+    <a class="navbar-brand" href="#" id="nombreAir"><img src="{{asset('img/logo.png')}}" id="home">SkyVibes Airline</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Link</a>
-        </li>
       </ul>
       <form class="d-flex" role="search">
-        <button type="button" class="btn btn-primary"><i id="user" class="fa-solid fa-circle-user fa-xl"></i>Login/Sign Up</button>
+        <button type="button" class="btn-login" onclick="window.location.href='{{route('login')}}'"><i id="user" class="fa-solid fa-circle-user fa-xl"></i>  Iniciar Sesión</button>
         <select name="opciones" id="opciones">
         <option value="opcion1">Honduras</option>
         <option value="opcion2">Guatemala</option>

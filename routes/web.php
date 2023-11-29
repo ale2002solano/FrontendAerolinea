@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,11 @@ Route::get('/avion', function () {
 Route::get('/login', function () {
     return view('Login');
 });
+
+//BOTONES DEL LOGIN
+Route::get('/login/registrarse',[LoginController::class, 'registrarse'])->name('registrarse');
+//FIN BOTONES DEL LOGIN
+
+//BOTONES DEL HOME
+Route::get('/home/login',[LoginController::class, 'index'])->name('login');
+//FIN BOTONES HOME

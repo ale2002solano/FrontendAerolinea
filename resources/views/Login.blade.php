@@ -13,22 +13,23 @@
     <div class="principal">
     <div class="contenedorfondo">
         <div class="header">
-            <button class="btn2">Sign up</button>
+        <a href="{{URL::previous()}}" id="back"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i> Regresar</a>
+            <img src="../img/logo.png" id="logo">
         </div>
-        <div class="cotenido">
-        <img src="../img/logo.png" id="logo">
-        <label for="" class="label-username"><b>Username</b></label>
-        <input type="text" name="username" id="username">
+    </div>
+    <div class="cotenido">
+        <input type="text" name="username" id="username" placeholder="username">
         <br>
-        <label for="" class="label-password"><b>Password</b></label>
-        <input type="password" name="password" id="password">
-        <br><br>
+        <input type="password" name="password" id="password" placeholder="password">
+        <br>
         <button class="login-btn">Login</button>
+        <br>
+        <a href="{{route('registrarse')}}">¿Aún no tienes una cuenta?</a>
         </div>
-        
-    </div>
-    <div class="login"></div>
-    </div>
+    </div><br><br><br>
+    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 100%">
+    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
+    <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
     
 </body>
 </html>
