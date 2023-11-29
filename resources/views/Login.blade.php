@@ -13,16 +13,22 @@
     <div class="principal">
     <div class="contenedorfondo">
         <div class="header">
-            <button class="btn2">Sign up</button>
+        <a href="{{URL::previous()}}" id="back"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i> Regresar</a>
+            <img src="../img/logo.png" id="logo">
         </div>
+<<<<<<< HEAD
+    </div>
+    <div class="cotenido">
+        <input type="text" name="username" id="username" placeholder="username">
+        <br>
+        <input type="password" name="password" id="password" placeholder="password">
+=======
         <div class="cotenido">
-        <img src="../img/logo.png" id="logo">
+        <img src="{{asset('img/logo.ico')}}" id="logo">
         <label for="" class="label-username"><b>Username</b></label>
         <input type="text" name="username" id="username">
+>>>>>>> 08341ce4fd5cb2fd05f62529a5521de4080d8ccb
         <br>
-        <label for="" class="label-password"><b>Password</b></label>
-        <input type="password" name="password" id="password">
-        <br><br>
         <button class="login-btn">Login</button>
         <br>
         <a href="{{route('registrarse')}}">¿Aún no tienes una cuenta?</a>
