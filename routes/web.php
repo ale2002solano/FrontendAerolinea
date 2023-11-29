@@ -30,6 +30,12 @@ Route::get('/avion', function () {
     return view('Avion');
 });
 
+Route::get('/vuelos', function () {
+    return view('ListaVuelos');
+});
+
+
+
 Route::get('/login', function () {
     return view('Login');
 });

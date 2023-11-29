@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/vuelos.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <script src="https://kit.fontawesome.com/02ade1bbb9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid" style="height:100%">
+                <a class="navbar-brand"style="height:100%;color: #f2f0eb;font-weight: 700;" href="#" id="nombreAir"><img style="height:100%; object-fit:cover" src="{{asset('img/logo.png')}}" id="home">SkyVibes Airline</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button style="border: none;" type="button" class="btn-login" onclick="window.location.href='{{route('login')}}'"><i id="user" class="fa-solid fa-circle-user fa-xl"></i>  Iniciar Sesión</button>
+                        <select name="opciones" id="opciones">
+                            <option value="opcion1">Honduras</option>
+                            <option value="opcion2">Guatemala</option>
+                            <option value="opcion3">Panama</option>
+                            <!-- Puedes agregar más opciones si lo deseas -->
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="vuelos">
+            <div style="height:14%"></div>
+            <div id="tituloVuelo"><h2>Elije tu vuelo</h2></div>
+            <div id="infoVuelo">
+                <div style="height:20%"><h2>Elije el destinto</h2></div>
+                <div id="infoRuta">
+                    <div id="rutaOrigen" class="rutaBloque"><h2>Origen</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
+                    <div id="rutaDestino" class="rutaBloque"><h2>Destino</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
+                </div>
+            </div>
+            <div id="opcionesVuelo">
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

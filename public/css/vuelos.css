@@ -1,0 +1,61 @@
+body{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 140%;
+    width: 100%;
+    border: 2px solid rgb(255, 238, 0);
+}
+
+#navbar{
+	background-color: #295675af;
+	position: fixed; /* Fija la barra de navegación en la parte superior */
+  width: 100%; /* O el ancho deseado */
+  z-index: 1000;
+  height: 20%;
+}
+
+#vuelos{
+    height: 150%;
+    border: 2px solid blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+#tituloVuelo{
+    height: 7%;
+    border: 2px solid green;
+}
+
+#opcionesVuelo{
+    height: 60%;
+    border: 2px solid green;
+}
+
+#infoVuelo{
+    height: 20%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#infoRuta{
+    display: flex;
+    height: 60%;
+    border: 2px solid pink;
+}
+
+.rutaBloque{
+    border: 2px solid orange;
+    width: 30%;
+    height: 80%;
+    margin: 0 2%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
