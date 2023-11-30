@@ -22,3 +22,24 @@ function habilitarDestino() {
     opcion2.removeEventListener('click', habilitarSelect);
   }
   
+  document.addEventListener('DOMContentLoaded', function() {
+    var select1 = document.getElementById('origen');
+    var select2 = document.getElementById('destino');
+    var miBoton = document.getElementById('buscar');
+
+    select1.addEventListener('change', function() {
+        validarSeleccion();
+    });
+
+    select2.addEventListener('change', function() {
+        validarSeleccion();
+    });
+
+    function validarSeleccion() {
+        if (select1.value !== '' && select2.value !== '') {
+            miBoton.disabled = false;
+        } else {
+            miBoton.disabled = true;
+        }
+    }
+});

@@ -13,7 +13,7 @@
 
 <nav class="navbar navbar-expand-lg" id="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" id="nombreAir"><img src="{{asset('img/logo.png')}}" id="home">SkyVibes Airline</a>
+    <a class="navbar-brand" href="{{route('home')}}" id="nombreAir"><img src="{{asset('img/logo.png')}}" id="home">SkyVibes Airline</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -72,7 +72,7 @@
     <option value="opcion2">Opción 2</option>
     <option value="opcion3">Opción 3</option>
     </select><br><br>
-    <button class="btn-buscar">Buscar</button>
+    <button class="btn-buscar" id="buscar" disabled>Buscar</button>
     
   </form><br><br>
 </div>
