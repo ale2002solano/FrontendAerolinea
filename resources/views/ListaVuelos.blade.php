@@ -32,17 +32,123 @@
             </div>
         </nav>
         <div id="vuelos">
-            <div style="height:14%"></div>
-            <div id="tituloVuelo"><h2>Elije tu vuelo</h2></div>
+            <div style="height:13%"></div>
             <div id="infoVuelo">
-                <div style="height:20%"><h2>Elije el destinto</h2></div>
+                <div style="height:20%"><h2>Tu destinto</h2></div>
                 <div id="infoRuta">
                     <div id="rutaOrigen" class="rutaBloque"><h2>Origen</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
                     <div id="rutaDestino" class="rutaBloque"><h2>Destino</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
                 </div>
             </div>
-            <div id="opcionesVuelo">
-                
+            <div id="opcionesVuelo" >
+                <div id="vuelo1" class="vueloDetalle">
+                    <div style="height:12%" class="vueloIdaVuelta"><h2>Vuelo de Ida</h2></div>
+                    <div class="listaV" id="listaVuelos">
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+
+                    </div>
+                    <div  class="espacioV" id="espacioVuelos">
+                        <div  style="height:22%; background-color:#295675"></div>
+                        <div class="espacioInfo">
+                            <div class="infoInfo">
+                                <div class="horaSalida">
+                                    <h4>Salida</h4>
+                                    <h3>20:20</h3>
+                                </div>
+                                <div class="tramas">
+                                    <hr class="lineas">
+                                    <div class="tramaIndividual">
+                                        <div class="circulo"></div>
+                                        <div class="aeropuerto"><h4>Aeropuerto toncontin</h4></div>
+                                    </div>
+                                    <div class="tramaIndividual">
+                                        <div class="circulo"></div>
+                                        <div class="aeropuerto"><h4>Aeropuerto </h4></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="irAvion">
+                                <button id="botonViajar">Viajar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="vuelo2" class="vueloDetalle">
+                    <div style="height:12%" class="vueloIdaVuelta"><h2>Vuelo de Regreso</h2></div>
+                    <div class="listaV" id="listaVuelos2">
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        <div class="vueloNumeros">
+                            <div><h4>10/02/2023</h4></div>
+                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        </div>
+                        
+                    </div>
+                    <div class="espacioV" id="espacioVuelos2"></div>
+
+                </div>
             </div>
         </div>
     </div>
