@@ -195,12 +195,3 @@ body{
     margin-right: auto;
     margin-left: 3%;
 }
-.vueloNumeros::-webkit-scrollbar {
-    width: 0.5em;
-}
-
-
-/* Muestra las barras de desplazamiento al pasar el mouse sobre el contenedor */
-.vueloNumeros:hover::-webkit-scrollbar {
-    width: 0.5em;
-}
