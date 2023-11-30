@@ -1,0 +1,116 @@
+#navbar{
+	background-color: #295675af;
+	position: fixed; /* Fija la barra de navegación en la parte superior */
+  width: 100%; /* O el ancho deseado */
+  z-index: 1000;
+}
+#home{
+	width: 10%;
+	height: 10%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+#nombreAir{
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size:x-large;
+	font-weight: bolder;
+}
+#user{
+	color:#f3f5f7;
+    margin-right: 5px;
+}
+.nombre{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+    color: #ffffff;
+	font-family: 'Lato', sans-serif;
+}
+
+.vuelos{
+    z-index: 2000;
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 10%;
+	width: 40%;
+}
+
+#carouselExample{
+	position:fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+
+.header{
+	background-color: rgb(223, 222, 222);
+	color: #d10816;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	padding-left: 5%;
+	padding-bottom: 2%;
+}
+
+.vuelo{
+	background-color: rgb(255, 255, 255);
+	font-family: 'Lato', sans-serif;
+	padding-left: 5%;
+	padding-bottom: 5%;
+}
+label{
+	margin-right: 2%;
+}
+#ida,#idaVuelta{
+	accent-color: red;
+}
+
+.input-container {
+	position: relative;
+  }
+  
+  /* Ajusta la posición del datalist */
+  #lista-frutas {
+	position: absolute;
+	top: 0;
+	left: 100%; /* Coloca el datalist a la derecha del input */
+	margin-top: -1.5em; /* Ajusta el desplazamiento vertical */
+	border: 1px solid #ccc; /* Añade un borde para mayor claridad */
+  }
+  
+  .btn-buscar{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(90deg, #f5717a 0%, #d10816 100%);
+    padding: 10px 29px;
+    border: solid #cc1414 2px;
+    box-shadow: rgb(0, 0, 0) 4px 9px 25px -10px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.btn-buscar:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #f5717a 0%, #ca1723 100%);
+    color: #ffffff;
+    border: solid 2px #d10808;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+  p{
+	text-transform: uppercase;
+  }
