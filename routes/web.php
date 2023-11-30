@@ -34,6 +34,9 @@ Route::get('/vuelos', function () {
     return view('ListaVuelos');
 });
 
+Route::get('/cliente', function () {
+    return view('Cliente');
+});
 
 
 Route::get('/login', function () {
