@@ -18,6 +18,7 @@
         </div>
     </div>
     <div class="cotenido">
+        <form action="/login" method="post">
         <input type="text" name="username" id="username" placeholder="username">
         <br>
         <input type="password" name="password" id="password" placeholder="password">
@@ -26,6 +27,7 @@
         <br>
         <a href="{{route('registrarse')}}">¿Aún no tienes una cuenta?</a>
         </div><br><br><br>
+        </form>
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 100%">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
