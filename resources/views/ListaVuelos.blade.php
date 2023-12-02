@@ -44,55 +44,19 @@
                 <div id="vuelo1" class="vueloDetalle">
                     <div style="height:12%" class="vueloIdaVuelta"><h2>Vuelo de Ida</h2></div>
                     <div class="listaV" id="listaVuelos">
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
+                    @foreach ($vuelos as $vuelo)
+                    <!-- onclick="MostrarInformacionVuelo({{ json_encode($vuelo) }})" -->
+                    <a href="">
+                    <div class="vueloNumeros" onclick="MostrarInformacionVuelo({{ json_encode($vuelo) }})">
+                            <div><h4>{{ date('Y-m-d', strtotime($vuelo['fechaPartida'])) }}</h4></div>
                             <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
                         </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-
+                    </a>
+                    @endforeach
                     </div>
                     <div  class="espacioV" id="espacioVuelos">
                         <div  style="height:22%; background-color:#295675"></div>
-                        <div class="espacioInfo">
+                        <div class="espacioInfo" id="espacioInfoIda">
                             <div class="infoInfo">
                                 <div class="horaSalida">
                                     <h4>Salida</h4>
@@ -100,14 +64,16 @@
                                 </div>
                                 <div class="tramas">
                                     <hr class="lineas">
+                                    <!-- @foreach ($escalas as $escala) -->
                                     <div class="tramaIndividual">
                                         <div class="circulo"></div>
-                                        <div class="aeropuerto"><h4>Aeropuerto toncontin</h4></div>
+                                        <div class="aeropuerto"><h4>toncontin</h4></div>
                                     </div>
-                                    <div class="tramaIndividual">
-                                        <div class="circulo"></div>
-                                        <div class="aeropuerto"><h4>Aeropuerto </h4></div>
-                                    </div>
+                                    <!-- @endforeach -->
+                                </div>
+                                <div class="horaSalida">
+                                    <h4>Llegada</h4>
+                                    <h3>20:20</h3>
                                 </div>
                             </div>
                             <div class="irAvion">
@@ -153,6 +119,6 @@
         </div>
     </div>
 
-    
+<script src="{{ asset('js/InformacionVuelos.js') }}"></script>
 </body>
 </html>
