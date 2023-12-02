@@ -77,7 +77,7 @@ body{
     height: 28%;
     display: flex;
     margin: 20px 1%;
-    overflow:auto;
+    overflow:hidden;
     width: 94%;
 }
 
