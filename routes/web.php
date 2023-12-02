@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VuelosController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,9 +32,9 @@ Route::get('/avion', function () {
 });
 
 
-Route::get('/cliente', function () {
+Route::get('/perfil', function () {
     return view('Cliente');
-});
+})->name('perfil');
 
 
 Route::get('/login', function () {
@@ -52,8 +51,7 @@ Route::get('/home/login',[LoginController::class, 'index'])->name('login');
 
 // CONSUMO DE LAS APIS DE GUZZLE
 Route::post('/login',[LoginController::class, 'login'])->name('login.post');
-
-
+Route::get('/login/obtenerOrigenes',[ClienteController::class, 'obtenerOrigenes'])->name('Origenes');
 
 Route::get('/vuelos',[VuelosController::class, 'MostrarVuelosPorRuta'])->name('mostrarVuelos');
 

@@ -21,7 +21,9 @@
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
       </ul>
       <form class="d-flex" role="search">
-        <div class="nombre"><i id="user" class="fa-solid fa-circle-user fa-xl" ></i>  Gerardo Lopez</div>
+      @if(session()->has('nombre_completo'))
+        <div class="nombre"><i id="user" class="fa-solid fa-circle-user fa-xl" ></i>  {{ session('nombre_completo') }}</div>
+        @endif
       </form>
     </div>
   </div>
@@ -61,9 +63,9 @@
     <p>Desde</p>
     <select name="Origen" id="origen" onchange="habilitarDestino();" disabled>
     <option value="" disabled selected>Selecciona un origen</option>
-    <option value="opcion1">Opción 1</option>
-    <option value="opcion2">Opción 2</option>
-    <option value="opcion3">Opción 3</option>
+    @foreach($origenes as $origen)
+    <option value="{{ $origen }}">{{ $origen }}</option>
+    @endforeach
     </select><br><br>
     <p>Hacia</p>
     <select name="Destino" id="destino" disabled>
@@ -73,7 +75,7 @@
     <option value="opcion3">Opción 3</option>
     </select><br><br>
     <button class="btn-buscar" id="buscar" disabled>Buscar</button>
-    
+
   </form><br><br>
 </div>
 
@@ -82,8 +84,8 @@
 
 
 <script src="{{ asset('js/cliente.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

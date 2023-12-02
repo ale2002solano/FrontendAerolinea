@@ -20,7 +20,7 @@
     <div class="cotenido">
         <form action="{{ route('login.post') }}" method="post">
             @csrf
-        <input type="text" name="email" id="username" placeholder="username">
+        <input type="email" name="email" id="username" placeholder="username">
         <br>
         <input type="password" name="password" id="password" placeholder="password">
         <br>
@@ -33,6 +33,6 @@
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 100%">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
-    
+    s
 </body>
 </html>
