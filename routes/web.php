@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\VuelosController;
 
 
 /*
@@ -31,9 +32,6 @@ Route::get('/avion', function () {
     return view('Avion');
 });
 
-Route::get('/vuelos', function () {
-    return view('ListaVuelos');
-});
 
 Route::get('/cliente', function () {
     return view('Cliente');
@@ -56,3 +54,5 @@ Route::get('/home/login',[LoginController::class, 'index'])->name('login');
 Route::post('/login',[LoginController::class, 'login'])->name('login.post');
 
 
+
+Route::get('/vuelos',[VuelosController::class, 'MostrarVuelosPorRuta'])->name('mostrarVuelos');

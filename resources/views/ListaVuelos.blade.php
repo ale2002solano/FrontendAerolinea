@@ -44,51 +44,12 @@
                 <div id="vuelo1" class="vueloDetalle">
                     <div style="height:12%" class="vueloIdaVuelta"><h2>Vuelo de Ida</h2></div>
                     <div class="listaV" id="listaVuelos">
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
+                    @foreach ($vuelos as $vuelo)
+                    <div class="vueloNumeros">
+                            <div><h4>{{ date('Y-m-d', strtotime($vuelo['fechaPartida'])) }}</h4></div>
                             <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
                         </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-
+                    @endforeach
                     </div>
                     <div  class="espacioV" id="espacioVuelos">
                         <div  style="height:22%; background-color:#295675"></div>
