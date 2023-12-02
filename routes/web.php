@@ -56,3 +56,5 @@ Route::post('/login',[LoginController::class, 'login'])->name('login.post');
 
 
 Route::get('/vuelos',[VuelosController::class, 'MostrarVuelosPorRuta'])->name('mostrarVuelos');
+
+Route::get('/vuelos/escala',[VuelosController::class, 'MostrarEscalasVuelo'])->name('mostrarEscalas');
