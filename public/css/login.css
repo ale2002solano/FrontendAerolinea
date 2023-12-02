@@ -32,17 +32,7 @@ border: none;
     font-family: Roboto, sans-serif;
     margin-left: 2%;
 }
-.cotenido{
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-    z-index: 10;
-    margin-right: 60%;
-    margin-top: 20%;
-}
+
 .contenido,a{
     z-index:10;
     color: #ffffff;
@@ -165,4 +155,16 @@ border: solid 2px #0077b6;
     margin-top: 10%;
     font-family: 'Lato', sans-serif;
     color: #295675;
+}
+form{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    z-index: 10;
+    margin-right: 60%;
+    margin-top: 20%;
+    z-index: 10;
 }

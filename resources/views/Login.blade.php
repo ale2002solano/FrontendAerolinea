@@ -18,14 +18,18 @@
         </div>
     </div>
     <div class="cotenido">
-        <input type="text" name="username" id="username" placeholder="username">
+        <form action="{{ route('login.post') }}" method="post">
+            @csrf
+        <input type="text" name="email" id="username" placeholder="username">
         <br>
         <input type="password" name="password" id="password" placeholder="password">
         <br>
-        <button class="login-btn">Login</button>
+        <button class="login-btn" type="submit">Login</button>
         <br>
         <a href="{{route('registrarse')}}">¿Aún no tienes una cuenta?</a>
-        </div><br><br><br>
+        <br><br><br>
+        </form>
+        </div>
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 100%">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">

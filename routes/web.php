@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,3 +51,8 @@ Route::get('/home/login/registrarse',[LoginController::class, 'registrarse'])->n
 //BOTONES DEL HOME
 Route::get('/home/login',[LoginController::class, 'index'])->name('login');
 //FIN BOTONES HOME
+
+// CONSUMO DE LAS APIS DE GUZZLE
+Route::post('/login',[LoginController::class, 'login'])->name('login.post');
+
+
