@@ -129,7 +129,7 @@ body{
 
 
 .tramas{
-    width: 80%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -148,7 +148,7 @@ body{
 .circulo{
     height: 36%;
     background-color: #91d7f2;
-    width: 5%;
+    width: 7%;
     border-radius: 50%;
     position: absolute;
     top: 32%;
