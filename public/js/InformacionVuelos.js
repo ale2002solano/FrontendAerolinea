@@ -3,6 +3,9 @@ function MostrarInformacionVuelo(vuelo){
 
 // Construye la URL completa usando el nombre de la ruta
     const url = `${baseUrl}/vuelos/escala?idVuelo=${vuelo.idVuelo}`;
+
+    const url2 = `${baseUrl}/vuelos/escala?idVuelo=${vuelo.idVuelo}`;
+
     var html="";
     $.ajax({
         url: url,  
@@ -68,9 +71,13 @@ function MostrarInformacionVuelo(vuelo){
 }
 
 function MostrarInformacionVuelo2(vuelo){
+    const baseUrl = $('meta[name="base-url"]').attr('content');
+
+    // Construye la URL completa usando el nombre de la ruta
+        const url = `${baseUrl}/vuelos/escala?idVuelo=${vuelo.idVuelo}`;
     var html="";
     $.ajax({
-        url: `http://localhost/FrontendAerolinea/public/vuelos/escala?idVuelo=${vuelo.idVuelo}`,  
+        url: url,  
         type: "GET",
         dataType: "json",
         success: function(response){
