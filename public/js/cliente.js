@@ -43,26 +43,26 @@ function habilitarDestino() {
         }
     }
 
-   $(document).ready(function() {
-  $('#origen').change(function() {
-    var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
-    obtenerDestinos(origenSeleccionado);
+//    $(document).ready(function() {
+//   $('#origen').change(function() {
+//     var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
+//     obtenerDestinos(origenSeleccionado);
 });
 
-function obtenerDestinos(origen) {
-    $.ajax({
-        type: 'GET',
-        url: '/obtenerDestinos', // La ruta de tu controlador para obtener destinos
-        data: { origen: origen }, // Pasar el origen como parámetro
-        success: function(destinos) {
-            actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
-            console.log(destinos);
-        },
-        error: function() {
-            console.log('Error al obtener destinos');
-        }
-    });
-}
+// function obtenerDestinos(origen) {
+//     $.ajax({
+//         type: 'GET',
+//         url: '/obtenerDestinos', // La ruta de tu controlador para obtener destinos
+//         data: { origen: origen }, // Pasar el origen como parámetro
+//         success: function(destinos) {
+//             actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
+//             console.log(destinos);
+//         },
+//         error: function() {
+//             console.log('Error al obtener destinos');
+//         }
+//     });
+// }
 
 function actualizarDestinos(destinos) {
     var destinoSelect = $('#destino');
@@ -73,10 +73,7 @@ function actualizarDestinos(destinos) {
         destinoSelect.append('<option value="' + key + '">' + value + '</option>');
     });
 }
-});
 
-  
-});
 
 
 //DESTINOS
@@ -86,7 +83,7 @@ $(document).ready(function() {
       obtenerDestinos(origenSeleccionado);
   });
 
-  function obtenerDestinos(origen) {
+function obtenerDestinos(origen) {
     console.log(origen);
     
       $.ajax({
@@ -107,9 +104,12 @@ $(document).ready(function() {
       var destinoSelect = $('#destino');
       destinoSelect.empty(); // Limpiar select de destinos
 
-      // Agregar opciones al select de destinos con un bucle foreach
-      $.each(destinos, function(key, value) {
-          destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+      destinos.destinos.forEach(element => {
+        destinoSelect.append('<option value="' + element + '">' + element + '</option>');
       });
+      // Agregar opciones al select de destinos con un bucle foreach
+    //   $.each(destinos, function(key, value) {
+    //       destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+    //   });
   }
 });
