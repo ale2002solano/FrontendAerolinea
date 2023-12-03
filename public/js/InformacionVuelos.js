@@ -43,7 +43,9 @@ function MostrarInformacionVuelo(vuelo){
                     </div>
                 </div>
                 <div class="irAvion">
-                    <button id="botonViajar">Comprar</button>
+                    <a href='{{route('asientosCantidad', ${vuelo.idVuelo})}}'>
+                    <button id="botonViajar" onclick="cargarAvionA('${vuelo.idVuelo}')">Comprar</button>
+                    </a>
                 </div>
             </div>
         `
@@ -125,6 +127,20 @@ function MostrarInformacionVuelo2(vuelo){
 
 }
 
+function cargarAvion(idVuelo) {
+    $.ajax({
+        url: `http://localhost/FrontendAerolinea/public/asientoPorVuelo/${idVuelo}`,  
+        type: "GET",
+        dataType: "json",
+        success: function(response){
+            console.log(response);   
+        },
+        
+        error:function(error){
+            console.log(error);
+        }
+    })
+}
 // "idVuelo" => "BB3C"
 // "aerolinea" => array:2 [▶]
 // "ruta" => array:4 [▶]

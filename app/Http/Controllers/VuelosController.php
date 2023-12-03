@@ -31,4 +31,11 @@ class VuelosController extends Controller
         $escalas = $response->json();
         return response()->json(['escalas' => $escalas]);
     }
+
+    public function ObtenerAsientosVuelo($idVuelo){
+        $url = "http://localhost:8080/api/vuelo/numeroAsientos/$idVuelo";      
+        $response = \Http::get($url);
+        $numeroVuelos = $response->json();
+        return view('Avion', compact('numeroVuelos'));
+    }
 }

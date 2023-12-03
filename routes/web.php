@@ -27,11 +27,6 @@ Route::get('/home', function () {
     return view('Home');
 })->name('home');
 
-Route::get('/avion', function () {
-    return view('Avion');
-});
-
-
 Route::get('/perfil', function () {
     return view('Cliente');
 })->name('perfil');
@@ -56,3 +51,7 @@ Route::get('/login/obtenerOrigenes',[ClienteController::class, 'obtenerOrigenes'
 Route::get('/vuelos',[VuelosController::class, 'MostrarVuelosPorRuta'])->name('mostrarVuelos');
 
 Route::get('/vuelos/escala',[VuelosController::class, 'MostrarEscalasVuelo'])->name('mostrarEscalas');
+
+Route::get('/asientoPorVuelo/{idVuelo}',[VuelosController::class, 'ObtenerAsientosVuelo'])->name('asientosCantidad');
+
+Route::get('/avion',[VuelosController::class, 'ObtenerAsientosVuelo'])->name('obtenerAsientos');
