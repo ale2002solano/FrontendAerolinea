@@ -81,11 +81,9 @@ public function obtenerDestinosPorOrigen(Request $request){
 
 public function conejo(){
     $origen = request()->query('origen');
-    $url = "http://127.0.0.1:8080/api/ruta/obtenerDestinos?origen=$origen"; 
-    dd($url);     
+    $url = "http://127.0.0.1:8080/api/ruta/obtenerDestinos?origen=$origen";   
     $response = \Http::get($url);
     $destinos = $response->json();
-    dd($destinos);
     return response()->json(['destinos' => $destinos]);
 }
 

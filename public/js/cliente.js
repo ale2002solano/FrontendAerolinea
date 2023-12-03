@@ -43,10 +43,10 @@ function habilitarDestino() {
         }
     }
 
-   $(document).ready(function() {
-  $('#origen').change(function() {
-    var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
-    obtenerDestinos(origenSeleccionado);
+//    $(document).ready(function() {
+//   $('#origen').change(function() {
+//     var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
+//     obtenerDestinos(origenSeleccionado);
 });
 
 // function obtenerDestinos(origen) {
@@ -73,10 +73,7 @@ function actualizarDestinos(destinos) {
         destinoSelect.append('<option value="' + key + '">' + value + '</option>');
     });
 }
-});
 
-  
-});
 
 
 //DESTINOS
@@ -86,7 +83,7 @@ $(document).ready(function() {
       obtenerDestinos(origenSeleccionado);
   });
 
-  function obtenerDestinos(origen) {
+function obtenerDestinos(origen) {
     console.log(origen);
     
       $.ajax({
@@ -107,9 +104,12 @@ $(document).ready(function() {
       var destinoSelect = $('#destino');
       destinoSelect.empty(); // Limpiar select de destinos
 
-      // Agregar opciones al select de destinos con un bucle foreach
-      $.each(destinos, function(key, value) {
-          destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+      destinos.destinos.forEach(element => {
+        destinoSelect.append('<option value="' + element + '">' + element + '</option>');
       });
+      // Agregar opciones al select de destinos con un bucle foreach
+    //   $.each(destinos, function(key, value) {
+    //       destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+    //   });
   }
 });
