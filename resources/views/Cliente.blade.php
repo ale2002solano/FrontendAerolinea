@@ -61,7 +61,7 @@
     <input type="radio" name="tipoVuelo" id="ida" value="ida"><label for="ida">Ida</label>
     <input type="radio" name="tipoVuelo" id="idaVuelta" value="idaVuelta"><label for="idaVuelta">Ida y vuelta</label><br><br>
     <p>Desde</p>
-    <select name="Origen" id="origen" onchange="habilitarDestino();" disabled>
+    <select name="Origen" id="origen" onchange="habilitarDestino()" disabled>
     <option value="" disabled selected>Selecciona un origen</option>
     @foreach($origenes as $origen)
     <option value="{{ $origen }}">{{ $origen }}</option>
@@ -70,9 +70,8 @@
     <p>Hacia</p>
     <select name="Destino" id="destino" disabled>
     <option value="" disabled selected>Selecciona un destino</option>
-    <option value="opcion1">Opción 1</option>
-    <option value="opcion2">Opción 2</option>
-    <option value="opcion3">Opción 3</option>
+    
+    
     </select><br><br>
     <button class="btn-buscar" id="buscar" disabled>Buscar</button>
 
@@ -80,11 +79,8 @@
 </div>
 
 
-
-
-
-<script src="{{ asset('js/cliente.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ asset('js/cliente.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>

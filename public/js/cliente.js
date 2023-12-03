@@ -43,42 +43,73 @@ function habilitarDestino() {
         }
     }
 
-    //RENDERIZAR ORIGENES
-        // document.addEventListener('DOMContentLoaded', function() {
-        //   // Obtener el elemento select por el id
-        //   var selectOrigen = document.getElementById('origen');
-    
-        //   // Realizar la solicitud GET al servidor
-        //   fetch('/obtenerOrigenes')
-        //       .then(function(response) {
-        //           if (!response.ok) {
-        //               throw new Error('No se pudo conectar al servidor');
-        //           }
-        //           return response.json();
-        //       })
-        //       .then(function(data) {
-        //           // Limpiar el select por si tiene opciones anteriores
-        //           selectOrigen.innerHTML = '';
-        //           // Agregar la opción predeterminada
-        //           var defaultOption = document.createElement('option');
-        //           defaultOption.value = '';
-        //           defaultOption.text = 'Selecciona un origen';
-        //           defaultOption.disabled = true;
-        //           defaultOption.selected = true;
-        //           selectOrigen.appendChild(defaultOption);//agregar un nuevo elemento como hijo al elemento padre
-    
-        //           // Agregar las opciones de origen obtenidas
-        //           data.forEach(function(origen) {
-        //               var option = document.createElement('option'); // Reemplaza 'valor' con el campo correcto de tu origen
-        //               option.text = origen.nombre; // Reemplaza 'nombre' con el campo correcto de tu origen
-        //               selectOrigen.appendChild(option);
-        //           });
-    
-              
-//           })
-//           .catch(function(error) {
-//               console.error('Error al obtener los origenes', error);
-//           });
-//   });
+   $(document).ready(function() {
+  $('#origen').change(function() {
+    var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
+    obtenerDestinos(origenSeleccionado);
+});
+
+function obtenerDestinos(origen) {
+    $.ajax({
+        type: 'GET',
+        url: '/obtenerDestinos', // La ruta de tu controlador para obtener destinos
+        data: { origen: origen }, // Pasar el origen como parámetro
+        success: function(destinos) {
+            actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
+            console.log(destinos);
+        },
+        error: function() {
+            console.log('Error al obtener destinos');
+        }
+    });
+}
+
+function actualizarDestinos(destinos) {
+    var destinoSelect = $('#destino');
+    destinoSelect.empty(); // Limpiar select de destinos
+
+    // Agregar opciones al select de destinos con un bucle foreach
+    $.each(destinos, function(key, value) {
+        destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+    });
+}
+});
+
   
+});
+
+
+//DESTINOS
+$(document).ready(function() {
+  $('#origen').change(function() {
+      var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
+      obtenerDestinos(origenSeleccionado);
+  });
+
+  function obtenerDestinos(origen) {
+    console.log(origen);
+    
+      $.ajax({
+          url: `http://localhost/FrontendAerolinea/public/conejo?origen=${origen}`,
+          type: 'GET',
+          dataType:"json", 
+          success: function(destinos) {
+              actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
+              console.log(destinos);
+          },
+          error: function() {
+              console.log('Error al obtener destinos');
+          }
+      });
+  }
+
+  function actualizarDestinos(destinos) {
+      var destinoSelect = $('#destino');
+      destinoSelect.empty(); // Limpiar select de destinos
+
+      // Agregar opciones al select de destinos con un bucle foreach
+      $.each(destinos, function(key, value) {
+          destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+      });
+  }
 });

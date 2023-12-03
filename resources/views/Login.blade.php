@@ -33,6 +33,6 @@
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="width: 100%">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
     <img src="{{ asset('img/nubes.png') }}" alt="" id="nubes" style="mix-blend-mode:multiply; width: 100%;">
-    s
+    
 </body>
 </html>
