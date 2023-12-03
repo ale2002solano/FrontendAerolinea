@@ -85,9 +85,13 @@ $(document).ready(function() {
 
 function obtenerDestinos(origen) {
     console.log(origen);
+    const baseUrl = $('meta[name="base-url"]').attr('content');
+
+    // Construye la URL completa usando el nombre de la ruta
+        const url = `${baseUrl}/conejo?origen=${origen}`;
     
       $.ajax({
-          url: `http://localhost/FrontendAerolinea/public/conejo?origen=${origen}`,
+          url: url,
           type: 'GET',
           dataType:"json", 
           success: function(destinos) {
