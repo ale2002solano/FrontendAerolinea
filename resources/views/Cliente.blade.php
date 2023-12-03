@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/cliente.css')}}">
     <link rel="icon" href="{{asset('img/logo.ico')}}">
+    <script src="{{ asset('js/destinos.js') }}"></script>
 </head>
 <body>
 
@@ -61,7 +62,7 @@
     <input type="radio" name="tipoVuelo" id="ida" value="ida"><label for="ida">Ida</label>
     <input type="radio" name="tipoVuelo" id="idaVuelta" value="idaVuelta"><label for="idaVuelta">Ida y vuelta</label><br><br>
     <p>Desde</p>
-    <select name="Origen" id="origen" onchange="habilitarDestino();" disabled>
+    <select name="Origen" id="origen" onchange="habilitarDestino(),cargarDestinos()" disabled>
     <option value="" disabled selected>Selecciona un origen</option>
     @foreach($origenes as $origen)
     <option value="{{ $origen }}">{{ $origen }}</option>
@@ -70,9 +71,7 @@
     <p>Hacia</p>
     <select name="Destino" id="destino" disabled>
     <option value="" disabled selected>Selecciona un destino</option>
-    <option value="opcion1">Opción 1</option>
-    <option value="opcion2">Opción 2</option>
-    <option value="opcion3">Opción 3</option>
+    
     </select><br><br>
     <button class="btn-buscar" id="buscar" disabled>Buscar</button>
 

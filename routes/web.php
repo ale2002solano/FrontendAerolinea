@@ -52,5 +52,6 @@ Route::get('/home/login',[LoginController::class, 'index'])->name('login');
 // CONSUMO DE LAS APIS DE GUZZLE
 Route::post('/login',[LoginController::class, 'login'])->name('login.post');
 Route::get('/login/obtenerOrigenes',[ClienteController::class, 'obtenerOrigenes'])->name('Origenes');
+Route::get('/obtenerDestinos', 'LoginController@obtenerDestinos')->name('obtenerDestinos');
 
 Route::get('/vuelos',[VuelosController::class, 'MostrarVuelosPorRuta'])->name('mostrarVuelos');

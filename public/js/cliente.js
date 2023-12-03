@@ -43,42 +43,40 @@ function habilitarDestino() {
         }
     }
 
-    //RENDERIZAR ORIGENES
-        // document.addEventListener('DOMContentLoaded', function() {
-        //   // Obtener el elemento select por el id
-        //   var selectOrigen = document.getElementById('origen');
-    
-        //   // Realizar la solicitud GET al servidor
-        //   fetch('/obtenerOrigenes')
-        //       .then(function(response) {
-        //           if (!response.ok) {
-        //               throw new Error('No se pudo conectar al servidor');
-        //           }
-        //           return response.json();
-        //       })
-        //       .then(function(data) {
-        //           // Limpiar el select por si tiene opciones anteriores
-        //           selectOrigen.innerHTML = '';
-        //           // Agregar la opción predeterminada
-        //           var defaultOption = document.createElement('option');
-        //           defaultOption.value = '';
-        //           defaultOption.text = 'Selecciona un origen';
-        //           defaultOption.disabled = true;
-        //           defaultOption.selected = true;
-        //           selectOrigen.appendChild(defaultOption);//agregar un nuevo elemento como hijo al elemento padre
-    
-        //           // Agregar las opciones de origen obtenidas
-        //           data.forEach(function(origen) {
-        //               var option = document.createElement('option'); // Reemplaza 'valor' con el campo correcto de tu origen
-        //               option.text = origen.nombre; // Reemplaza 'nombre' con el campo correcto de tu origen
-        //               selectOrigen.appendChild(option);
-        //           });
-    
-              
-//           })
-//           .catch(function(error) {
-//               console.error('Error al obtener los origenes', error);
-//           });
-//   });
+//     //RENDERIZAR DESTINOS
+//     function cargarDestinos() {
+//       var origenSeleccionado = document.getElementById("origen").value;
+//       if (origenSeleccionado !== '') {
+//           obtenerDestinos(origenSeleccionado);
+//       }
+//   }
+
+//   function obtenerDestinos(origen) {
+//     fetch(`http://localhost:8080/api/ruta/obtenerDestinos?origen=${origen}`)
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error('La respuesta de la solicitud no fue exitosa');
+//             }
+//             return response.json();
+//         })
+//         .then(destinos => {
+//             console.log('Destinos obtenidos:', destinos); // Verifica los destinos obtenidos en la consola
+//             var selectDestino = document.getElementById("destino");
+//             selectDestino.innerHTML = '<option value="" disabled selected>Selecciona un destino</option>';
+
+//             destinos.forEach(destino => {
+//                 var option = document.createElement("option");
+//                 option.value = destino;
+//                 option.text = destino;
+//                 selectDestino.appendChild(option);
+//             });
+
+//             selectDestino.disabled = false;
+//         })
+//         .catch(error => {
+//             console.error('Error al obtener los destinos:', error);
+//         });
+// }
+
   
 });
