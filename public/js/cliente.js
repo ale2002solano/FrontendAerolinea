@@ -88,7 +88,7 @@ function obtenerDestinos(origen) {
     const baseUrl = $('meta[name="base-url"]').attr('content');
 
     // Construye la URL completa usando el nombre de la ruta
-        const url = `${baseUrl}/conejo?origen=${origen}`;
+    const url = `${baseUrl}/conejo?origen=${origen}`;
     
       $.ajax({
           url: url,
@@ -117,3 +117,15 @@ function obtenerDestinos(origen) {
     //   });
   }
 });
+
+function irAVuelos() {
+  const baseUrl = $('meta[name="base-url"]').attr('content');
+
+
+  let origen = document.getElementById('origen').value;
+  let destino = document.getElementById('destino').value;
+  // Construye la URL completa usando el nombre de la ruta
+  const urlVuelos = `${baseUrl}/vuelos?origen=${origen}&destino=${destino}`;
+  window.location.href=urlVuelos;
+
+}
