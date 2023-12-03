@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="{{ asset('css/vuelos.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
     <script src="https://kit.fontawesome.com/02ade1bbb9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
     <div id="contenedor">
@@ -46,38 +48,42 @@
                     <div class="listaV" id="listaVuelos">
                     @foreach ($vuelos as $vuelo)
                     <!-- onclick="MostrarInformacionVuelo({{ json_encode($vuelo) }})" -->
-                    <a href="">
-                    <div class="vueloNumeros" onclick="MostrarInformacionVuelo({{ json_encode($vuelo) }})">
-                            <div><h4>{{ date('Y-m-d', strtotime($vuelo['fechaPartida'])) }}</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                        <div class="vueloNumeros" onclick="MostrarInformacionVuelo({{ json_encode($vuelo) }})">
+                                <div><h4>{{ date('Y-m-d', strtotime($vuelo['fechaPartida'])) }}</h4></div>
+                                <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
                         </div>
-                    </a>
                     @endforeach
                     </div>
                     <div  class="espacioV" id="espacioVuelos">
-                        <div  style="height:22%; background-color:#295675"></div>
+                    <div id="bordeInfo1">
+                        <div style="display:flex;justify-content: space-around;width: 20%;">
+                            <h3 style="color: white">Vuelo:</h3>
+                            <h3 style="color: white"></h3>
+                        </div>
+                        <div style="display:flex;justify-content: space-around;width: 30%;">
+                            <h3 style="color: white">Fecha de Partida</h3>
+                            <h3 style="color: white"></h3>
+                        </div>
+                    </div>
                         <div class="espacioInfo" id="espacioInfoIda">
                             <div class="infoInfo">
                                 <div class="horaSalida">
                                     <h4>Salida</h4>
-                                    <h3>20:20</h3>
+                                    <h3></h3>
                                 </div>
                                 <div class="tramas">
                                     <hr class="lineas">
-                                    <!-- @foreach ($escalas as $escala) -->
                                     <div class="tramaIndividual">
-                                        <div class="circulo"></div>
-                                        <div class="aeropuerto"><h4>toncontin</h4></div>
+                                        <div class="aeropuerto"><h4></h4></div>
                                     </div>
-                                    <!-- @endforeach -->
                                 </div>
                                 <div class="horaSalida">
                                     <h4>Llegada</h4>
-                                    <h3>20:20</h3>
+                                    <h3></h3>
                                 </div>
                             </div>
                             <div class="irAvion">
-                                <button id="botonViajar">Viajar</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -86,33 +92,47 @@
                 <div id="vuelo2" class="vueloDetalle">
                     <div style="height:12%" class="vueloIdaVuelta"><h2>Vuelo de Regreso</h2></div>
                     <div class="listaV" id="listaVuelos2">
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
+                    @foreach ($vuelosRegreso as $vuelo)
+                    <!-- onclick="MostrarInformacionVuelo({{ json_encode($vuelo) }})" -->
+                        <div class="vueloNumeros" onclick="MostrarInformacionVuelo2({{ json_encode($vuelo) }})">
+                                <div><h4>{{ date('Y-m-d', strtotime($vuelo['fechaPartida'])) }}</h4></div>
+                                <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
                         </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
-                        <div class="vueloNumeros">
-                            <div><h4>10/02/2023</h4></div>
-                            <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
-                        </div>
+                    @endforeach
                         
                     </div>
-                    <div class="espacioV" id="espacioVuelos2"></div>
+                    <div class="espacioV" id="espacioVuelos2">
+                    <div id="bordeInfo2">
+                        <div style="display:flex;justify-content: space-around;width: 20%;">
+                            <h3 style="color: white">Vuelo:</h3>
+                            <h3 style="color: white">BBC3</h3>
+                        </div>
+                        <div style="display:flex;justify-content: space-around;width: 30%;">
+                            <h3 style="color: white">Fecha de Partida</h3>
+                            <h3 style="color: white">23-10-23</h3>
+                        </div>
+                    </div>
+                        <div class="espacioInfo" id="espacioInfoIda2">
+                            <div class="infoInfo">
+                                <div class="horaSalida">
+                                    <h4>Salida</h4>
+                                    <h3></h3>
+                                </div>
+                                <div class="tramas">
+                                    <hr class="lineas">
+                                    <div class="tramaIndividual">
+                                        <div class="aeropuerto"><h4></h4></div>
+                                    </div>
+                                </div>
+                                <div class="horaSalida">
+                                    <h4>Llegada</h4>
+                                    <h3></h3>
+                                </div>
+                            </div>
+                            <div class="irAvion">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

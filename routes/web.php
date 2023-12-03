@@ -55,3 +55,5 @@ Route::get('/login/obtenerOrigenes',[ClienteController::class, 'obtenerOrigenes'
 Route::get('/obtenerDestinos', 'LoginController@obtenerDestinos')->name('obtenerDestinos');
 
 Route::get('/vuelos',[VuelosController::class, 'MostrarVuelosPorRuta'])->name('mostrarVuelos');
+
+Route::get('/vuelos/escala',[VuelosController::class, 'MostrarEscalasVuelo'])->name('mostrarEscalas');

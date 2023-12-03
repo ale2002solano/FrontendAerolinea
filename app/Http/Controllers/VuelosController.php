@@ -16,14 +16,19 @@ class VuelosController extends Controller
         $url = "http://localhost:8080/api/vuelo/buscarVuelosPorRuta?origen=$origen&destino=$destino";      
         $response = \Http::get($url);
         $vuelos = $response->json();
-        return view('ListaVuelos', compact('vuelos'));
+        // dd($vuelos);
+        $urlRegreso = "http://localhost:8080/api/vuelo/buscarVuelosPorRuta?origen=$destino&destino=$origen";      
+        $responseRegreso = \Http::get($urlRegreso);
+        $vuelosRegreso = $responseRegreso->json();
+        return view('ListaVuelos', compact('vuelos', 'vuelosRegreso'));
+
     }
 
     public function MostrarEscalasVuelo(){
-        $vuelo = request()->query('idVuelo');
-        $url = "http://localhost:8080/api/escala/obtener/porVuelo?idVuelo=$vuelo";      
+        $idVuelo = request()->query('idVuelo');
+        $url = "http://localhost:8080/api/escala/obtener/porVuelo?idVuelo=$idVuelo";      
         $response = \Http::get($url);
         $escalas = $response->json();
-        return view('ListaVuelos', compact('escalas'));
+        return response()->json(['escalas' => $escalas]);
     }
 }
