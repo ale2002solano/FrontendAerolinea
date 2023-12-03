@@ -49,20 +49,20 @@ function habilitarDestino() {
     obtenerDestinos(origenSeleccionado);
 });
 
-function obtenerDestinos(origen) {
-    $.ajax({
-        type: 'GET',
-        url: '/obtenerDestinos', // La ruta de tu controlador para obtener destinos
-        data: { origen: origen }, // Pasar el origen como parámetro
-        success: function(destinos) {
-            actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
-            console.log(destinos);
-        },
-        error: function() {
-            console.log('Error al obtener destinos');
-        }
-    });
-}
+// function obtenerDestinos(origen) {
+//     $.ajax({
+//         type: 'GET',
+//         url: '/obtenerDestinos', // La ruta de tu controlador para obtener destinos
+//         data: { origen: origen }, // Pasar el origen como parámetro
+//         success: function(destinos) {
+//             actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
+//             console.log(destinos);
+//         },
+//         error: function() {
+//             console.log('Error al obtener destinos');
+//         }
+//     });
+// }
 
 function actualizarDestinos(destinos) {
     var destinoSelect = $('#destino');
