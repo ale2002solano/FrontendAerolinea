@@ -43,40 +43,73 @@ function habilitarDestino() {
         }
     }
 
-//     //RENDERIZAR DESTINOS
-//     function cargarDestinos() {
-//       var origenSeleccionado = document.getElementById("origen").value;
-//       if (origenSeleccionado !== '') {
-//           obtenerDestinos(origenSeleccionado);
-//       }
-//   }
+   $(document).ready(function() {
+  $('#origen').change(function() {
+    var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
+    obtenerDestinos(origenSeleccionado);
+});
 
-//   function obtenerDestinos(origen) {
-//     fetch(`http://localhost:8080/api/ruta/obtenerDestinos?origen=${origen}`)
-//         .then(response => {
-//             if (!response.ok) {
-//                 throw new Error('La respuesta de la solicitud no fue exitosa');
-//             }
-//             return response.json();
-//         })
-//         .then(destinos => {
-//             console.log('Destinos obtenidos:', destinos); // Verifica los destinos obtenidos en la consola
-//             var selectDestino = document.getElementById("destino");
-//             selectDestino.innerHTML = '<option value="" disabled selected>Selecciona un destino</option>';
+function obtenerDestinos(origen) {
+    $.ajax({
+        type: 'GET',
+        url: '/obtenerDestinos', // La ruta de tu controlador para obtener destinos
+        data: { origen: origen }, // Pasar el origen como parámetro
+        success: function(destinos) {
+            actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
+            console.log(destinos);
+        },
+        error: function() {
+            console.log('Error al obtener destinos');
+        }
+    });
+}
 
-//             destinos.forEach(destino => {
-//                 var option = document.createElement("option");
-//                 option.value = destino;
-//                 option.text = destino;
-//                 selectDestino.appendChild(option);
-//             });
+function actualizarDestinos(destinos) {
+    var destinoSelect = $('#destino');
+    destinoSelect.empty(); // Limpiar select de destinos
 
-//             selectDestino.disabled = false;
-//         })
-//         .catch(error => {
-//             console.error('Error al obtener los destinos:', error);
-//         });
-// }
+    // Agregar opciones al select de destinos con un bucle foreach
+    $.each(destinos, function(key, value) {
+        destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+    });
+}
+});
 
   
+});
+
+
+//DESTINOS
+$(document).ready(function() {
+  $('#origen').change(function() {
+      var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
+      obtenerDestinos(origenSeleccionado);
+  });
+
+  function obtenerDestinos(origen) {
+    console.log(origen);
+    
+      $.ajax({
+          url: `http://localhost/FrontendAerolinea/public/conejo?origen=${origen}`,
+          type: 'GET',
+          dataType:"json", 
+          success: function(destinos) {
+              actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
+              console.log(destinos);
+          },
+          error: function() {
+              console.log('Error al obtener destinos');
+          }
+      });
+  }
+
+  function actualizarDestinos(destinos) {
+      var destinoSelect = $('#destino');
+      destinoSelect.empty(); // Limpiar select de destinos
+
+      // Agregar opciones al select de destinos con un bucle foreach
+      $.each(destinos, function(key, value) {
+          destinoSelect.append('<option value="' + key + '">' + value + '</option>');
+      });
+  }
 });

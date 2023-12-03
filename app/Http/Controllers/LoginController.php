@@ -52,6 +52,44 @@ class LoginController extends Controller
     }
 }
 
+public function obtenerDestinosPorOrigen(Request $request){
+    $origen = $request->input('origen'); // Obtener el origen desde la solicitud
+    dd($origen);
+    try {
+        $cliente = new \GuzzleHttp\Client([
+            'base_uri' => 'http://localhost:8080/api/',
+            'timeout'=>10.0,
+            'headers' => [
+                'Accept' => 'application/json',
+                'Content-Type' => 'application/json'
+            ]
+        ]);
+
+        // Hacer la solicitud GET con el origen como parámetro en la URL
+        $response = $cliente->get("ruta/obtenerDestinos?origen=$origen");
+
+        if ($response->getStatusCode() === 200) {
+            $destinos = json_decode($response->getBody(), true);
+            return dd($destinos); // Devolver los destinos obtenidos
+        } else {
+            return []; // En caso de error, devolver un array vacío o manejar el error según sea necesario
+        }
+    } catch (\Exception $e) {
+        return []; // Manejar excepciones si ocurren
+    }
+}
+
+public function conejo(){
+    $origen = request()->query('origen');
+    $url = "http://127.0.0.1:8080/api/ruta/obtenerDestinos?origen=$origen"; 
+    dd($url);     
+    $response = \Http::get($url);
+    $destinos = $response->json();
+    dd($destinos);
+    return response()->json(['destinos' => $destinos]);
+}
+
+
 
     public function login(Request $request){
         $correo=$request->input('email');
