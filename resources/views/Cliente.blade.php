@@ -61,8 +61,8 @@
   </div>
   <form class="vuelo">
     @csrf
-    <input type="radio" name="tipoVuelo" id="ida" value="ida"><label for="ida">Ida</label>
-    <input type="radio" name="tipoVuelo" id="idaVuelta" value="idaVuelta"><label for="idaVuelta">Ida y vuelta</label><br><br>
+    <input type="radio" name="tipoVuelo" id="ida"><label for="ida">Ida</label>
+    <input type="radio" name="tipoVuelo" id="idaVuelta" ><label for="idaVuelta">Ida y vuelta</label><br><br>
     <p>Desde</p>
     <select name="Origen" id="origen" onchange="habilitarDestino()" disabled>
     <option value="" disabled selected>Selecciona un origen</option>

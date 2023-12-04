@@ -90,6 +90,8 @@
                     </div>
 
                 </div>
+
+                @if(isset($_GET['tipo']) && $_GET['tipo'] == "idaVuelta")
                 <div id="vuelo2" class="vueloDetalle">
                     <div style="height:12%" class="vueloIdaVuelta"><h2>Vuelo de Regreso</h2></div>
                     <div class="listaV" id="listaVuelos2">
@@ -137,6 +139,8 @@
                     </div>
 
                 </div>
+                @endif
+
             </div>
         </div>
     </div>
