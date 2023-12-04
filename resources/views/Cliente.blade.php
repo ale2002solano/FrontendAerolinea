@@ -59,7 +59,7 @@
   <div class="header">
   <i class="fa-solid fa-plane-departure"></i>  Vuelos
   </div>
-  <form action="{{ route('mostrarVuelos') }}" class="vuelo">
+  <form class="vuelo">
     @csrf
     <input type="radio" name="tipoVuelo" id="ida" value="ida"><label for="ida">Ida</label>
     <input type="radio" name="tipoVuelo" id="idaVuelta" value="idaVuelta"><label for="idaVuelta">Ida y vuelta</label><br><br>
@@ -74,7 +74,7 @@
     <select name="Destino" id="destino" disabled>
     <option value="" disabled selected>Selecciona un destino</option>
     </select><br><br>
-    <button class="btn-buscar" id="buscar" type="submit">Buscar</button>
+    <button class="btn-buscar" id="buscar" type="button" onclick="irAVuelos()">Buscar</button>
 
   </form><br><br>
 </div>

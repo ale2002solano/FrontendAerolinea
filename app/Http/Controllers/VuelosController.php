@@ -16,6 +16,7 @@ class VuelosController extends Controller
         $url = "http://localhost:8080/api/vuelo/buscarVuelosPorRuta?origen=$origen&destino=$destino";      
         $response = \Http::get($url);
         $vuelos = $response->json();
+        // dd($origen);
         // dd($vuelos);
         $urlRegreso = "http://localhost:8080/api/vuelo/buscarVuelosPorRuta?origen=$destino&destino=$origen";      
         $responseRegreso = \Http::get($urlRegreso);
