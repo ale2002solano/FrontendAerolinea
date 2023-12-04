@@ -154,11 +154,32 @@ let Apartados = [];
 let precio =[];
 function reservarAsiento(codigoAsiento) {
     console.log("Reserving " + codigoAsiento +" ");
-    Apartados.push(codigoAsiento);
-    document.getElementById(codigoAsiento).children[0].style.color ='#dd9b0e';
-    document.getElementById('CompradorAsiento').innerHTML+=`
-    ${codigoAsiento} 
-    `
+    console.log(document.getElementById(codigoAsiento).children[0].style.color)
+    if (document.getElementById(codigoAsiento).children[0].style.color!='rgb(209, 8, 22)'
+        && document.getElementById(codigoAsiento).children[0].style.color!='rgb(221, 155, 14)'
+    ) {
+        Apartados.push(codigoAsiento);
+        document.getElementById(codigoAsiento).children[0].style.color ='#dd9b0e';
+        document.getElementById('CompradorAsiento').innerHTML+=`
+        ${codigoAsiento} 
+        `
+    }
+    else if (document.getElementById(codigoAsiento).children[0].style.color=='rgb(221, 155, 14)') {
+        let codigos="";
+        document.getElementById('CompradorAsiento').innerHTML='';
+        for (let index = 0; index < Apartados.length; index++) {
+            if (Apartados[index] == codigoAsiento) {
+                Apartados.splice(index, 1);
+            }
+            
+        }
+        document.getElementById(codigoAsiento).children[0].style.color ='#295675';
+        Apartados.forEach(element => {
+            document.getElementById('CompradorAsiento').innerHTML+=`
+            ${element} 
+            `
+        });
+    }
 } 
 
 

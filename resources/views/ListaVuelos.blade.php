@@ -100,6 +100,7 @@
                                 <div><i class="fa-solid fa-plane-up" style="font-size:260%"></i></div>
                         </div>
                     @endforeach
+
                         
                     </div>
                     <div class="espacioV" id="espacioVuelos2">

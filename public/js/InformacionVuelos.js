@@ -138,7 +138,12 @@ function MostrarInformacionVuelo2(vuelo){
 }
 
 function cargarAvion(idVuelo) {
-    const url = `${baseUrl}/asientoPorVuelo/${idVuelo}`;
+    // Obtener los parámetros de la URL
+    var urlParams = new URLSearchParams(window.location.search);
+
+// Obtener el valor del parámetro idCliente
+    var idCliente = urlParams.get('User');
+    const url = `${baseUrl}/asientoPorVuelo/${idVuelo}?user=${idCliente}`;
     window.location.href=url;
     
 }

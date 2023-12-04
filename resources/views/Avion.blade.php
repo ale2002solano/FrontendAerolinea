@@ -22,7 +22,7 @@
             <h3>{{$origen = $vuelo['ruta']['origen'];}}   -   {{$destino= $vuelo['ruta']['destino'];}}</h3>
         </div>
         <div id="boletoInfo">
-            <h2 id="CompradorInfo" style="margin:5px 0 0 0">Cliente:</h2>
+            <h2 id="CompradorInfo" style="margin:5px 0 0 0">Cliente:  {{$cliente['nombre']}}  {{$cliente['apellido']}}</h2>
             <br>
             <h2 id="CompradorAsiento" style="margin: 5px 0 0 5px">Asiento:</h2></div>
         <div id="boletoBoton"><button id="botonCompra" onclick="comprarBoletos('{{$vuelo['idVuelo']}}')">Generar</button></div>

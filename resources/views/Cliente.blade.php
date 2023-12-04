@@ -74,7 +74,7 @@
     <select name="Destino" id="destino" disabled>
     <option value="" disabled selected>Selecciona un destino</option>
     </select><br><br>
-    <button class="btn-buscar" id="buscar" type="button" onclick="irAVuelos()">Buscar</button>
+    <button class="btn-buscar" id="buscar" type="button" onclick="irAVuelos({{session('idCliente') }})">Buscar</button>
 
   </form><br><br>
 </div>

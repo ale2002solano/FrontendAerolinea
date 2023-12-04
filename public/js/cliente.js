@@ -118,14 +118,14 @@ function obtenerDestinos(origen) {
   }
 });
 
-function irAVuelos() {
+function irAVuelos(idCliente) {
   const baseUrl = $('meta[name="base-url"]').attr('content');
 
 
   let origen = document.getElementById('origen').value;
   let destino = document.getElementById('destino').value;
   // Construye la URL completa usando el nombre de la ruta
-  const urlVuelos = `${baseUrl}/vuelos?origen=${origen}&destino=${destino}`;
+  const urlVuelos = `${baseUrl}/vuelos?origen=${origen}&destino=${destino}&User=${idCliente}`;
   window.location.href=urlVuelos;
 
 }
