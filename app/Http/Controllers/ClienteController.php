@@ -13,7 +13,6 @@ class ClienteController extends Controller{
 
     public function registrarCliente(Request $request)
     {
-        // Validar los datos del formulario
 
         // Crear un array con los datos del cliente
         $data = [

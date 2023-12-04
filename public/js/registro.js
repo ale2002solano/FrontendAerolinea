@@ -25,11 +25,16 @@ $(document).ready(function() {
                 // Manejar la respuesta exitosa aquí
                 console.log(data);
                 alert('Cliente registrado exitosamente');
+                window.location.href = '/login';
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 // Manejar errores
-                console.error(errorThrown);
-                alert('Hubo un error al registrar el cliente');
+                if (jqXHR.status === 409) {
+                    alert(jqXHR.responseJSON.error); // Muestra el mensaje específico para cliente existente
+                } else {
+                    console.error(errorThrown);
+                    alert('Hubo un error al registrar el cliente');
+                }
             }
         });
     });
