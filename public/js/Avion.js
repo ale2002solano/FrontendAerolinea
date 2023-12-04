@@ -149,6 +149,7 @@ function solicitudAsientos(codigoAsiento, idVuelo) {
             console.log('Error al actulizar asiento');
         }
     })
+    gestionarCompra(idVuelo, codigoAsiento);
 }
 let Apartados = [];
 let precio =[];
@@ -192,25 +193,39 @@ function comprarBoletos(idVuelo) {
     });
 }
     
-function gestionarCompra(vuelo) {
+function gestionarCompra(vuelo, idAsiento) {
     const baseUrl = $('meta[name="base-url"]').attr('content');
     const url = `${baseUrl}/crearBoleto?idVuelo=${vuelo}`;
     // Obtener los parámetros de la URL
     var urlParams = new URLSearchParams(window.location.search);
     // Obtener el valor del parámetro idCliente
     var idCliente = urlParams.get('user');
-    letdatos = { idVuelo: 'valor1', otroCampo: 'valor2' ,otroCampo: 'valor2' };
-
+    let boleto = {
+        cliente: {
+            idCliente: idCliente
+        }, 
+        "asiento": {
+            nombreAsiento: idAsiento
+        },
+    };
     $.ajax({
         url: url,
-        type: 'POST',
+        type: `GET`,
         dataType: "json",
-        data: datos,  // Agrega los datos al cuerpo de la solicitud
-        success: function(destinos) {
-            console.log("actualizado");
+        contentType: "application/json",
+        data:{
+            cliente: {
+                idCliente: idCliente
+            }, 
+            asiento: {
+                nombreAsiento: idAsiento
+            },
+        },
+        success: function() {
+            console.log("boletoCreado");
         },
         error: function() {
-            console.log('Error al actualizar asiento');
+            console.log('Error al crearBoleto');
         }
     });
 

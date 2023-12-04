@@ -27,10 +27,31 @@ class BoletoController extends Controller
     }
 
     public function CrearBoleto(){
-    $idVuelo = $request->input('idVuelo');
+    $idVuelo = request()->query('idVuelo');
+    $datos =request()->all();
+    $cliente = $datos['cliente'];
+    $asiento = $datos['asiento'];
+    
+    $boleto = [
+        'cliente' => $cliente,
+        'asiento' => $asiento,
+    ];
+    $jsonBoleto = json_encode($boleto);
+    dd($jsonBoleto);
     $url = "http://localhost:8080/api/boleto/crear?idVuelo=$idVuelo";
-    $response = \Http::post($url);
-    $asiento = $response->json();
-    return response()->json(['asiento' => $asiento]);
+        // Realizar la solicitud a Spring Boot
+        $response = \Http::post($url, [
+            'json' => $jsonBoleto, // Enviar datos como JSON al servicio Spring Boot
+            'headers' => [
+                'Content-Type' => 'application/json',
+                // Puedes agregar otros encabezados según sea necesario
+            ],
+        ]);
+
+        // Obtener la respuesta del servicio Spring Boot
+        $boletoGet = $response->json();
+
+        // Retornar la respuesta como JSON
+        return response()->json(['boletoGet' => $boletoGet]);
     }
 }

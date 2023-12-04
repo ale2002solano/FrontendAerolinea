@@ -31,6 +31,7 @@
             <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="mix-blend-mode:multiply; width: 100%;">
             <img src="{{ asset('img/nubes.png') }}" alt="" class="nubesDecoracion" style="mix-blend-mode:multiply; width: 100%;"> -->
         </div>
+        
 
         <img src="{{ asset('img/logoregistro1.png') }}" alt="" id="logo">        
     </div>  
@@ -172,6 +173,17 @@
     <div id="acercar" onclick="aumentarAvion()">
         <h2>Acercar</h2>
     </div>
+
+    <form id="formularioBoleto" action="{{route('registrar')}}" metodo="POST">
+            @csrf
+            @method('POST')
+            <input class="inputBoletoForm" type="text" name="nombre" placeholder="Nombre">
+            <input class="inputBoletoForm" type="text" name="apellido" placeholder="Apellido" >
+            <input class="inputBoletoForm" type="text" name="correo" placeholder="Correo electronico">
+            <input class="inputBoletoForm" type="text" name="telefono" placeholder="Telefono">
+            <input class="inputBoletoForm" type="password" name="password" placeholder="Contraseña">
+            <button class="botonBoletoForm" type="submit">Guardar</button>
+    </form>
 <!-- <span class="material-symbols-outlined">event_seat</span>
 <span class="material-symbols-outlined">chair</span>
 <span class="material-symbols-outlined">chair_alt</span> -->
