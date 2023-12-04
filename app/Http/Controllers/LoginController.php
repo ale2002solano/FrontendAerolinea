@@ -41,11 +41,11 @@ class LoginController extends Controller
             $origenes = json_decode($response->getBody(), true);
             return $origenes;
         } else {
-            $origenes = [];
+            $origenes = [];//retorna un array vacio
         }
     } catch (RequestException $e) {
-        // Manejar errores de solicitud (por ejemplo, tiempo de espera agotado, URL incorrecta, etc.)
-        $origenes = [];
+        // Manejar errores de solicitud 
+        return 'tiempo de espera agotado ';
     } catch (\Exception $e) {
         // Manejar otras excepciones
         $origenes = [];
@@ -72,10 +72,10 @@ public function obtenerDestinosPorOrigen(Request $request){
             $destinos = json_decode($response->getBody(), true);
             return dd($destinos); // Devolver los destinos obtenidos
         } else {
-            return []; // En caso de error, devolver un array vacío o manejar el error según sea necesario
+            return 'No se estan obteniendo los destinos'; // En caso de error
         }
     } catch (\Exception $e) {
-        return []; // Manejar excepciones si ocurren
+        return []; // Manejar excepciones 
     }
 }
 
