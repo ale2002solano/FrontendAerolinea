@@ -25,4 +25,12 @@ class BoletoController extends Controller
         return response()->json(['asiento' => $asiento]);
 
     }
+
+    public function CrearBoleto(){
+    $idAsiento = $request->input('idAsiento');
+    $url = "http://localhost:8080/api/asiento/seleccionarAsiento/$idAsiento/$idVuelo";
+    $response = \Http::post($url);
+    $asiento = $response->json();
+    return response()->json(['asiento' => $asiento]);
+    }
 }

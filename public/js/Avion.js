@@ -183,7 +183,7 @@ function reservarAsiento(codigoAsiento) {
 } 
 
 
-async function comprarBoletos(idVuelo) {
+function comprarBoletos(idVuelo) {
     Apartados.forEach(asiento => {
         console.log(asiento)
     });
@@ -192,4 +192,22 @@ async function comprarBoletos(idVuelo) {
     });
 }
     
+function gestionarCompra(vuelo) {
+    const baseUrl = $('meta[name="base-url"]').attr('content');
+    const url = `${baseUrl}/reservarAsientos/${codigoAsiento}/${idVuelo}`;
+    letdatos = { idVuelo: 'valor1', otroCampo: 'valor2' };
 
+    $.ajax({
+        url: url,
+        type: 'POST',
+        dataType: "json",
+        data: datos,  // Agrega los datos al cuerpo de la solicitud
+        success: function(destinos) {
+            console.log("actualizado");
+        },
+        error: function() {
+            console.log('Error al actualizar asiento');
+        }
+    });
+
+}
