@@ -88,7 +88,7 @@ function obtenerDestinos(origen) {
     const baseUrl = $('meta[name="base-url"]').attr('content');
 
     // Construye la URL completa usando el nombre de la ruta
-    const url = `${baseUrl}/conejo?origen=${origen}`;
+    const url = `${baseUrl}/destinoOrigen?origen=${origen}`;
     
       $.ajax({
           url: url,

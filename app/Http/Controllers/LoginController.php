@@ -79,7 +79,7 @@ public function obtenerDestinosPorOrigen(Request $request){
     }
 }
 
-public function conejo(){
+public function destinosPorOrigen(){
     $origen = request()->query('origen');
     $url = "http://127.0.0.1:8080/api/ruta/obtenerDestinos?origen=$origen";   
     $response = \Http::get($url);
