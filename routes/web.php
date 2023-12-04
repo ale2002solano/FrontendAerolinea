@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VuelosController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\RegistroController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,3 +60,6 @@ Route::get('/vuelos/escala',[VuelosController::class, 'MostrarEscalasVuelo'])->n
 Route::get('/asientoPorVuelo/{idVuelo}',[VuelosController::class, 'ObtenerAsientosVuelo'])->name('asientosCantidad');
 
 Route::get('/avion',[VuelosController::class, 'ObtenerAsientosVuelo'])->name('obtenerAsientos');
+
+// Rutas para el registro de clientes
+Route::post('/registrarCliente', [ClienteController::class, 'registrarCliente'])->name('registrar');

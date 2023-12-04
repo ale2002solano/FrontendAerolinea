@@ -120,9 +120,9 @@ public function conejo(){
             if ($statusCode == 200 && isset($data['idCliente']) && !empty($data['idCliente'])) {
                 $nombreCompleto= $data['nombre'].' '.$data['apellido'];//guardaremos temporalmente el nombre y apellido del cliente en una variable
                 $origenes = $this->obtenerOrigenes();
-                session(['nombre_completo' => $nombreCompleto,'origenes' => $origenes]);
+                session(['nombre_completo' => $nombreCompleto,'origenes' => $origenes,'idCliente'=>$idCliente]);
                 
-                return view('cliente', ['nombre_completo' => $nombreCompleto, 'origenes' => $origenes]);
+                return view('cliente', ['nombre_completo' => $nombreCompleto, 'origenes' => $origenes,'idCliente'=>$idCliente]);
                 
             } else{
                 return 'No existe este perfil';
