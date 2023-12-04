@@ -13,7 +13,6 @@ class ClienteController extends Controller{
 
     public function registrarCliente(Request $request)
     {
-        // Validar los datos del formulario (igual que antes)
 
         // Crear un array con los datos del cliente
         $data = [
@@ -24,7 +23,7 @@ class ClienteController extends Controller{
             'contrasena' => $request->input('password'),
         ];
 
-        // Realizar la solicitud POST a tu backend en Spring Boot usando Guzzle
+        // Realizar la solicitud POST al backend  usando Guzzle
         $client = new Client([
             'base_uri' => 'http://localhost:8080/api/',
             'timeout'  => 2.0,
@@ -38,7 +37,6 @@ class ClienteController extends Controller{
             // Obtener la respuesta del backend
             $responseData = json_decode($response->getBody(), true);
 
-            // Puedes hacer más aquí según la respuesta del backend
 
             return redirect()->route('home')->with('success', 'Cliente registrado correctamente');
         } catch (\Exception $e) {

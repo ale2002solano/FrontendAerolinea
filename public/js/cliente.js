@@ -42,27 +42,8 @@ function habilitarDestino() {
             miBoton.disabled = true;
         }
     }
-
-//    $(document).ready(function() {
-//   $('#origen').change(function() {
-//     var origenSeleccionado = $(this).val(); // Obtener el valor del origen seleccionado
-//     obtenerDestinos(origenSeleccionado);
 });
 
-// function obtenerDestinos(origen) {
-//     $.ajax({
-//         type: 'GET',
-//         url: '/obtenerDestinos', // La ruta de tu controlador para obtener destinos
-//         data: { origen: origen }, // Pasar el origen como parámetro
-//         success: function(destinos) {
-//             actualizarDestinos(destinos); // Llamar a la función para actualizar los destinos
-//             console.log(destinos);
-//         },
-//         error: function() {
-//             console.log('Error al obtener destinos');
-//         }
-//     });
-// }
 
 function actualizarDestinos(destinos) {
     var destinoSelect = $('#destino');
@@ -88,7 +69,7 @@ function obtenerDestinos(origen) {
     const baseUrl = $('meta[name="base-url"]').attr('content');
 
     // Construye la URL completa usando el nombre de la ruta
-    const url = `${baseUrl}/conejo?origen=${origen}`;
+    const url = `${baseUrl}/destinoOrigen?origen=${origen}`;
     
       $.ajax({
           url: url,
@@ -111,10 +92,6 @@ function obtenerDestinos(origen) {
       destinos.destinos.forEach(element => {
         destinoSelect.append('<option value="' + element + '">' + element + '</option>');
       });
-      // Agregar opciones al select de destinos con un bucle foreach
-    //   $.each(destinos, function(key, value) {
-    //       destinoSelect.append('<option value="' + key + '">' + value + '</option>');
-    //   });
   }
 });
 
