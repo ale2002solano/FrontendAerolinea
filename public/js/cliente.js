@@ -99,10 +99,10 @@ function irAVuelos(idCliente) {
   const baseUrl = $('meta[name="base-url"]').attr('content');
 
   let ida =""
-  if(document.getElementById('ida').value=="on"){
+  if(document.getElementById('ida').checked){
     ida="ida"
   }
-  if(document.getElementById('idaVuelta').value=="on"){
+  else if(document.getElementById('idaVuelta').checked){
     ida="idaVuelta"
   }
 

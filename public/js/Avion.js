@@ -185,7 +185,12 @@ function gestionarCompra(vuelo, idAsiento) {
     console.log("asiento: "+document.getElementById('asientoid2').value);
     console.log("cliente: "+document.getElementById('clienteid1').value);
     console.log("vuelo: "+document.getElementById('vueloid3').value);
-    alert("Boleto comprado con exito");
+    var mensajeAlerta = "Boleto comprado con éxito\n" +
+    "Asiento: " + document.getElementById('asientoid2').value + "\n" +
+    "Cliente: " + document.getElementById('clienteid1').value + "\n" +
+    "Vuelo: " + document.getElementById('vueloid3').value;
+
+    alert(mensajeAlerta);
     document.getElementById('idboton').click();
     console.log("probado");
     // const baseUrl = $('meta[name="base-url"]').attr('content');
