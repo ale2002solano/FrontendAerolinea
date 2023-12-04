@@ -194,8 +194,12 @@ function comprarBoletos(idVuelo) {
     
 function gestionarCompra(vuelo) {
     const baseUrl = $('meta[name="base-url"]').attr('content');
-    const url = `${baseUrl}/reservarAsientos/${codigoAsiento}/${idVuelo}`;
-    letdatos = { idVuelo: 'valor1', otroCampo: 'valor2' };
+    const url = `${baseUrl}/crearBoleto?idVuelo=${vuelo}`;
+    // Obtener los parámetros de la URL
+    var urlParams = new URLSearchParams(window.location.search);
+    // Obtener el valor del parámetro idCliente
+    var idCliente = urlParams.get('user');
+    letdatos = { idVuelo: 'valor1', otroCampo: 'valor2' ,otroCampo: 'valor2' };
 
     $.ajax({
         url: url,
