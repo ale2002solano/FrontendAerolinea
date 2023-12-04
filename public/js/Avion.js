@@ -136,19 +136,6 @@ function MostrarClase(bottom,posicion) {
 
 
 function solicitudAsientos(codigoAsiento, idVuelo) {
-    const baseUrl = $('meta[name="base-url"]').attr('content');
-    const url = `${baseUrl}/reservarAsientos/${codigoAsiento}/${idVuelo}`;
-    $.ajax({
-        url: url,
-        type: 'GET',
-        dataType:"json", 
-        success: function(destinos) {
-            console.log("actualizado")
-        },
-        error: function() {
-            console.log('Error al actulizar asiento');
-        }
-    })
     gestionarCompra(idVuelo, codigoAsiento);
 }
 let Apartados = [];
@@ -167,7 +154,7 @@ function reservarAsiento(codigoAsiento) {
     }
     else if (document.getElementById(codigoAsiento).children[0].style.color=='rgb(221, 155, 14)') {
         let codigos="";
-        document.getElementById('CompradorAsiento').innerHTML='';
+        document.getElementById('CompradorAsiento').innerHTML='Asiento:';
         for (let index = 0; index < Apartados.length; index++) {
             if (Apartados[index] == codigoAsiento) {
                 Apartados.splice(index, 1);
@@ -194,39 +181,45 @@ function comprarBoletos(idVuelo) {
 }
     
 function gestionarCompra(vuelo, idAsiento) {
-    const baseUrl = $('meta[name="base-url"]').attr('content');
-    const url = `${baseUrl}/crearBoleto?idVuelo=${vuelo}`;
-    // Obtener los parámetros de la URL
-    var urlParams = new URLSearchParams(window.location.search);
-    // Obtener el valor del parámetro idCliente
-    var idCliente = urlParams.get('user');
-    let boleto = {
-        cliente: {
-            idCliente: idCliente
-        }, 
-        "asiento": {
-            nombreAsiento: idAsiento
-        },
-    };
-    $.ajax({
-        url: url,
-        type: `GET`,
-        dataType: "json",
-        contentType: "application/json",
-        data:{
-            cliente: {
-                idCliente: idCliente
-            }, 
-            asiento: {
-                nombreAsiento: idAsiento
-            },
-        },
-        success: function() {
-            console.log("boletoCreado");
-        },
-        error: function() {
-            console.log('Error al crearBoleto');
-        }
-    });
+    document.getElementById('asientoid2').value = idAsiento;
+    console.log("asiento: "+document.getElementById('asientoid2').value);
+    console.log("cliente: "+document.getElementById('clienteid1').value);
+    console.log("vuelo: "+document.getElementById('vueloid3').value);
+    document.getElementById('idboton').click();
+    console.log("probado");
+    // const baseUrl = $('meta[name="base-url"]').attr('content');
+    // const url = `${baseUrl}/crearBoleto?idVuelo=${vuelo}`;
+    // // Obtener los parámetros de la URL
+    // var urlParams = new URLSearchParams(window.location.search);
+    // // Obtener el valor del parámetro idCliente
+    // var idCliente = urlParams.get('user');
+    // let boleto = {
+    //     cliente: {
+    //         idCliente: idCliente
+    //     }, 
+    //     "asiento": {
+    //         nombreAsiento: idAsiento
+    //     },
+    // };
+    // $.ajax({
+    //     url: url,
+    //     type: `GET`,
+    //     dataType: "json",
+    //     contentType: "application/json",
+    //     data:{
+    //         cliente: {
+    //             idCliente: idCliente
+    //         }, 
+    //         asiento: {
+    //             nombreAsiento: idAsiento
+    //         },
+    //     },
+    //     success: function() {
+    //         console.log("boletoCreado");
+    //     },
+    //     error: function() {
+    //         console.log('Error al crearBoleto');
+    //     }
+    // });
 
 }

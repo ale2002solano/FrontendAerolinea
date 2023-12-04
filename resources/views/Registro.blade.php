@@ -22,7 +22,7 @@
     <div id="derecha">
     <a href="{{route('home')}}" id="back"><i class="fa-solid fa-arrow-left" style="color: #295675;"></i> Regresar</a>
         <h2 >Registro</h2>
-        <form id="formularioRegistro" action="{{route('registrar')}}" metodo="POST">
+        <form id="formularioRegistro" action="{{route('registrar')}}" method="POST">
             @csrf
             @method('POST')
             <input class="inputRegistro" type="text" name="nombre" placeholder="Nombre">

@@ -174,15 +174,14 @@
         <h2>Acercar</h2>
     </div>
 
-    <form id="formularioBoleto" action="{{route('registrar')}}" metodo="POST">
+    <form id="formularioBoleto" action="{{route('crearBoleto')}}" method="POST" style="display:none">
             @csrf
             @method('POST')
-            <input class="inputBoletoForm" type="text" name="nombre" placeholder="Nombre">
-            <input class="inputBoletoForm" type="text" name="apellido" placeholder="Apellido" >
-            <input class="inputBoletoForm" type="text" name="correo" placeholder="Correo electronico">
-            <input class="inputBoletoForm" type="text" name="telefono" placeholder="Telefono">
-            <input class="inputBoletoForm" type="password" name="password" placeholder="Contraseña">
-            <button class="botonBoletoForm" type="submit">Guardar</button>
+            <input class="inputBoletoForm" type="text" id="clienteid1" name="clienteid1" value="{{$cliente['idCliente']}}">
+            <input class="inputBoletoForm" id="asientoid2" type="text" name="asientoid2" >
+            <input class="inputBoletoForm" id="vueloid3" type="text" name="vueloid3" value="{{$vuelo['idVuelo']}}" >
+            <button class="botonBoletoForm" id="idboton" type="submit">Guardar</button>
+
     </form>
 <!-- <span class="material-symbols-outlined">event_seat</span>
 <span class="material-symbols-outlined">chair</span>
