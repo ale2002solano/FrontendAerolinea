@@ -12,6 +12,7 @@
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-lg" id="navbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{route('home')}}" id="nombreAir"><img src="{{asset('img/logo.png')}}" id="home">SkyVibes Airline</a>
