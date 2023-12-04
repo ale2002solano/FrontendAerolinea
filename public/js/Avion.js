@@ -134,7 +134,41 @@ function MostrarClase(bottom,posicion) {
     
 }
 
-function reservarAsiento(codigoAsiento) {
-    console.log("Reserving " + codigoAsiento)
 
+function solicitudAsientos(codigoAsiento, idVuelo) {
+    const baseUrl = $('meta[name="base-url"]').attr('content');
+    const url = `${baseUrl}/reservarAsientos/${codigoAsiento}/${idVuelo}`;
+    $.ajax({
+        url: url,
+        type: 'GET',
+        dataType:"json", 
+        success: function(destinos) {
+            console.log("actualizado")
+        },
+        error: function() {
+            console.log('Error al actulizar asiento');
+        }
+    })
 }
+let Apartados = [];
+let precio =[];
+function reservarAsiento(codigoAsiento) {
+    console.log("Reserving " + codigoAsiento +" ");
+    Apartados.push(codigoAsiento);
+    document.getElementById(codigoAsiento).children[0].style.color ='#dd9b0e';
+    document.getElementById('CompradorAsiento').innerHTML+=`
+    ${codigoAsiento} 
+    `
+} 
+
+
+async function comprarBoletos(idVuelo) {
+    Apartados.forEach(asiento => {
+        console.log(asiento)
+    });
+    Apartados.forEach(asiento => {
+        solicitudAsientos(asiento, idVuelo)
+    });
+}
+    
+

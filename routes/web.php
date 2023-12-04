@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VuelosController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\BoletoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,4 +59,4 @@ Route::get('/vuelos/escala',[VuelosController::class, 'MostrarEscalasVuelo'])->n
 
 Route::get('/asientoPorVuelo/{idVuelo}',[VuelosController::class, 'ObtenerAsientosVuelo'])->name('asientosCantidad');
 
-Route::get('/avion',[VuelosController::class, 'ObtenerAsientosVuelo'])->name('obtenerAsientos');
+Route::get('/reservarAsientos/{idAsiento}/{idVuelo}',[BoletoController::class, 'ReservarAsiento'])->name('reservarAsiento');

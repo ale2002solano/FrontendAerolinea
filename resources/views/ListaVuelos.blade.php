@@ -39,8 +39,8 @@
             <div id="infoVuelo">
                 <div style="height:20%"><h2>Tu destinto</h2></div>
                 <div id="infoRuta">
-                    <div id="rutaOrigen" class="rutaBloque"><h2>Origen</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
-                    <div id="rutaDestino" class="rutaBloque"><h2>Destino</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
+                    <div id="rutaOrigen" class="rutaBloque"><h2>{{$origen = $vuelos[0]['ruta']['origen'];}}</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
+                    <div id="rutaDestino" class="rutaBloque"><h2>{{$origen = $vuelos[0]['ruta']['destino'];}}</h2><i class="fa-solid fa-chevron-down" style="color: #2a4b83; margin-left:2%; font-size:140%"></i></div>
                 </div>
             </div>
             <div id="opcionesVuelo" >

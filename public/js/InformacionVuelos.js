@@ -1,3 +1,5 @@
+const baseUrl = $('meta[name="base-url"]').attr('content');
+
 function MostrarInformacionVuelo(vuelo){
     const baseUrl = $('meta[name="base-url"]').attr('content');
 
@@ -12,7 +14,7 @@ function MostrarInformacionVuelo(vuelo){
         type: "GET",
         dataType: "json",
         success: function(response){
-            console.log(response.escalas);
+            // console.log(response.escalas);
             for (let index = 0; index < response.escalas.length-1; index++) {
                 element = response.escalas[index];
                 html += `
@@ -50,9 +52,7 @@ function MostrarInformacionVuelo(vuelo){
                     </div>
                 </div>
                 <div class="irAvion">
-                    <a href='{{route('asientosCantidad', ${vuelo.idVuelo})}}'>
-                    <button id="botonViajar" onclick="cargarAvionA('${vuelo.idVuelo}')">Comprar</button>
-                    </a>
+                    <button id="botonViajar" onclick="cargarAvion('${vuelo.idVuelo}')">Comprar</button>
                 </div>
             </div>
         `
@@ -64,24 +64,24 @@ function MostrarInformacionVuelo(vuelo){
             console.log(error);
         }
     })
-    console.log(vuelo);
+    // console.log(vuelo);
 
     
 
 }
 
 function MostrarInformacionVuelo2(vuelo){
-    const baseUrl = $('meta[name="base-url"]').attr('content');
+
 
     // Construye la URL completa usando el nombre de la ruta
-        const url = `${baseUrl}/vuelos/escala?idVuelo=${vuelo.idVuelo}`;
+    const url = `${baseUrl}/vuelos/escala?idVuelo=${vuelo.idVuelo}`;
     var html="";
     $.ajax({
         url: url,  
         type: "GET",
         dataType: "json",
         success: function(response){
-            console.log(response.escalas);
+            // console.log(response.escalas);
             for (let index = 0; index < response.escalas.length-1; index++) {
                 element = response.escalas[index];
                 html += `
@@ -131,7 +131,6 @@ function MostrarInformacionVuelo2(vuelo){
             console.log(error);
         }
     })
-    console.log('html: '+ html);
 
 
     
@@ -139,18 +138,9 @@ function MostrarInformacionVuelo2(vuelo){
 }
 
 function cargarAvion(idVuelo) {
-    $.ajax({
-        url: `http://localhost/FrontendAerolinea/public/asientoPorVuelo/${idVuelo}`,  
-        type: "GET",
-        dataType: "json",
-        success: function(response){
-            console.log(response);   
-        },
-        
-        error:function(error){
-            console.log(error);
-        }
-    })
+    const url = `${baseUrl}/asientoPorVuelo/${idVuelo}`;
+    window.location.href=url;
+    
 }
 // "idVuelo" => "BB3C"
 // "aerolinea" => array:2 [▶]

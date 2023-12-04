@@ -16,7 +16,6 @@ class VuelosController extends Controller
         $url = "http://localhost:8080/api/vuelo/buscarVuelosPorRuta?origen=$origen&destino=$destino";      
         $response = \Http::get($url);
         $vuelos = $response->json();
-        // dd($origen);
         // dd($vuelos);
         $urlRegreso = "http://localhost:8080/api/vuelo/buscarVuelosPorRuta?origen=$destino&destino=$origen";      
         $responseRegreso = \Http::get($urlRegreso);
@@ -34,9 +33,13 @@ class VuelosController extends Controller
     }
 
     public function ObtenerAsientosVuelo($idVuelo){
-        $url = "http://localhost:8080/api/vuelo/numeroAsientos/$idVuelo";      
+        $url = "http://localhost:8080/api/asiento/vueloAsientos/$idVuelo";
+        $url2 = "http://localhost:8080/api/vuelo/obtener?idVuelo=$idVuelo";
+        $response2 =\Http::get($url2);
         $response = \Http::get($url);
-        $numeroVuelos = $response->json();
-        return view('Avion', compact('numeroVuelos'));
+        $asientos = $response->json();
+        $vuelo = $response2->json();
+        // dd($asientos);
+        return view('Avion', compact('asientos', 'vuelo'));
     }
 }
