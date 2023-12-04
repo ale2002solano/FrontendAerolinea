@@ -50,8 +50,8 @@ class BoletoController extends Controller
             // Obtener la respuesta del backend
             $responseData = json_decode($response->getBody(), true);
 
-            
-            return redirect()->back()->with('success', 'Cliente registrado correctamente');
+
+            return redirect()->back()->intended('/tu-ruta-concreta')->with('success', 'Cliente registrado correctamente');
         } catch (\Exception $e) {
             // Manejar errores de conexión o del backend
             return redirect()->back()->with('error', 'Error al registrar el cliente: ' . $e->getMessage());

@@ -143,7 +143,8 @@ function cargarAvion(idVuelo) {
 
 // Obtener el valor del parámetro idCliente
     var idCliente = urlParams.get('User');
-    const url = `${baseUrl}/asientoPorVuelo/${idVuelo}?user=${idCliente}`;
+    var tipo = urlParams.get('tipo')
+    const url = `${baseUrl}/asientoPorVuelo/${idVuelo}?user=${idCliente}&tipo=${tipo}`;
     window.location.href=url;
     
 }

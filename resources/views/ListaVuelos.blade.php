@@ -22,15 +22,6 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     </ul>
-                    <form class="d-flex" role="search">
-                        <button style="border: none;" type="button" class="btn-login" onclick="window.location.href='{{route('login')}}'"><i id="user" class="fa-solid fa-circle-user fa-xl"></i>  Iniciar Sesión</button>
-                        <select name="opciones" id="opciones">
-                            <option value="opcion1">Honduras</option>
-                            <option value="opcion2">Guatemala</option>
-                            <option value="opcion3">Panama</option>
-                            <!-- Puedes agregar más opciones si lo deseas -->
-                        </select>
-                    </form>
                 </div>
             </div>
         </nav>

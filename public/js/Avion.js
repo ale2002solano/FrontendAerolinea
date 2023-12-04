@@ -185,6 +185,7 @@ function gestionarCompra(vuelo, idAsiento) {
     console.log("asiento: "+document.getElementById('asientoid2').value);
     console.log("cliente: "+document.getElementById('clienteid1').value);
     console.log("vuelo: "+document.getElementById('vueloid3').value);
+    alert("Boleto comprado con exito");
     document.getElementById('idboton').click();
     console.log("probado");
     // const baseUrl = $('meta[name="base-url"]').attr('content');
